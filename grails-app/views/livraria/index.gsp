@@ -8,10 +8,19 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
-    <title></title>
+    <meta name="layout" content="main2">
+    <title>pagina inicial</title>
+
 </head>
 
 <body>
-
+    <!--Barra Lateral -->
+    <aside class="main-sidebar">
+        <h1>BUCETA</h1>
+    </aside>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        BUTICP
+    </div>
 </body>
 </html>

@@ -1,7 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd460e60-93d2-4421-a48a-5c99230f1a00" name="Default Changelist" comment="" />
+    <list default="true" id="cd460e60-93d2-4421-a48a-5c99230f1a00" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/futurico/futurico.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/futurico/futurico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/futurico/futurico@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/icheck.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/icheck.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/minimal/_all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/minimal/aero.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/minimal/aero.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/minimal/aero@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/minimal/blue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/minimal/blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/minimal/blue@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/minimal/green.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/minimal/green.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/minimal/green@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/minimal/grey.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/minimal/grey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/minimal/grey@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/minimal/minimal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/minimal/minimal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/minimal/minimal@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/minimal/orange.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/minimal/orange.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/minimal/orange@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/minimal/pink.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/minimal/pink.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/minimal/pink@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/minimal/purple.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/minimal/purple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/minimal/purple@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/minimal/red.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/minimal/red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/minimal/red@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/minimal/yellow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/minimal/yellow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/minimal/yellow@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/polaris/polaris.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/polaris/polaris.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/polaris/polaris@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/square/aero@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/square/blue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/square/blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/square/blue@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/square/green.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/square/green.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/square/green@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/square/grey.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/square/grey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/square/grey@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/square/orange.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/square/orange.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/square/orange@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/square/pink.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/square/pink.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/square/pink@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/square/purple.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/square/purple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/square/purple@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/square/red@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/square/square.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/square/square.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/square/square@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/square/yellow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/square/yellow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/assets/admin/plugins/iCheck/square/yellow@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.asscache" beforeDir="false" afterPath="$PROJECT_DIR$/.asscache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.slcache/.index" beforeDir="false" afterPath="$PROJECT_DIR$/.slcache/.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Livraria2-grailsPlugins.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Livraria2-grailsPlugins.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Livraria2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Livraria2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/controllers/livraria2/LivrariaController.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/controllers/livraria2/LivrariaController.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/views/livraria/index.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/livraria/index.gsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/BuildConfig$_run_closure1$_closure5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BuildConfig$_run_closure1$_closure5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/livraria2/Aluguel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/livraria2/Aluguel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/livraria2/Autor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/livraria2/Autor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/livraria2/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/livraria2/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/livraria2/Estoque.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/livraria2/Estoque.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/livraria2/LivrariaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/livraria2/LivrariaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/livraria2/Livro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/livraria2/Livro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/stacktrace.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/stacktrace.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/work/plugin-classes/JQueryResourceTagLib.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/work/plugin-classes/JQueryResourceTagLib.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/work/plugin-classes/JQueryTagLib.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/work/plugin-classes/JQueryTagLib.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/grails/AssetMethodTagLib.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/grails/AssetMethodTagLib.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/grails/AssetsTagLib.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/work/plugin-classes/asset/pipeline/grails/AssetsTagLib.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/cache/CacheTagLib.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/cache/CacheTagLib.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/DbdocController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/DbdocController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/DslBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/DslBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsChange.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/work/plugin-classes/grails/plugin/databasemigration/GrailsChange.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/work/resources/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/work/resources/web.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$USER_HOME$/.grails/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -11,15 +103,42 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/assets/javascripts/application.js">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/livraria/index.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="424">
+              <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/livraria/login.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-72">
+              <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="64" column="18" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/assets/javascripts/login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -28,55 +147,74 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/assets/images/apple-touch-icon.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/assets/images/apple-touch-icon-retina.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/assets/images/grails_logo.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/assets/images/skin/database_add.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/assets/images/skin/database_delete.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/assets/images/skin/database_save.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
+        <entry file="file://$PROJECT_DIR$/grails-app/assets/javascripts/application2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="480">
+              <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/livraria2/LivrariaController.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/assets/stylesheets/login.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/assets/stylesheets/application2.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/assets/stylesheets/application.css">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="2" selection-start-column="2" selection-end-column="2" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/assets/stylesheets/errors.css">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/grails-app/assets/javascripts/application.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GrailsSDKManager">
     <option name="grailsSDKs">
@@ -94,32 +232,118 @@
         <option value="$PROJECT_DIR$/grails-app/domain/livraria2/Estoque.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/livraria2/Livro.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/livraria2/LivrariaController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/assets/admin/plugins/pace/pace.js" />
+        <option value="$PROJECT_DIR$/grails-app/assets/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/grails-app/assets/stylesheets/application2.css" />
+        <option value="$PROJECT_DIR$/grails-app/views/livraria/_heard.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/layouts/main2.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/assets/javascripts/application2.js" />
         <option value="$PROJECT_DIR$/grails-app/views/livraria/index.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/assets/stylesheets/login.js" />
+        <option value="$PROJECT_DIR$/grails-app/assets/stylesheets/login.css" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/livraria2/LivrariaController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/assets/javascripts/login.js" />
+        <option value="$PROJECT_DIR$/grails-app/views/livraria/login.gsp" />
         <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
+    <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Livraria2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Livraria2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Livraria2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Livraria2" type="462c0819:PsiDirectoryNode" />
+              <item name="grails-app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Livraria2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Livraria2" type="462c0819:PsiDirectoryNode" />
+              <item name="grails-app" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Livraria2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Livraria2" type="462c0819:PsiDirectoryNode" />
+              <item name="grails-app" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="livraria2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Livraria2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Livraria2" type="462c0819:PsiDirectoryNode" />
+              <item name="grails-app" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Livraria2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Livraria2" type="462c0819:PsiDirectoryNode" />
+              <item name="grails-app" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="livraria2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Livraria2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Livraria2" type="462c0819:PsiDirectoryNode" />
+              <item name="grails-app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Livraria2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Livraria2" type="462c0819:PsiDirectoryNode" />
+              <item name="grails-app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="livraria" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Grails" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="grails.last.selected.app.url" value="file://$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/grails-app/assets/admin" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lucas lima\IdeaProjects\Livraria2\grails-app\assets\admin" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lucas lima\IdeaProjects\Livraria2\grails-app\assets\admin" />
+      <recent name="C:\Users\lucas lima\IdeaProjects\Livraria2\grails-app\assets\javascripts" />
+      <recent name="C:\Users\lucas lima\IdeaProjects\Livraria2\grails-app\assets\stylesheets" />
+      <recent name="C:\Users\lucas lima\IdeaProjects\Livraria2\grails-app\assets" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -157,17 +381,18 @@
       <updated>1561843392925</updated>
       <workItem from="1561843396157" duration="5859000" />
       <workItem from="1561853484221" duration="634000" />
+      <workItem from="1561864581243" duration="846000" />
+      <workItem from="1561904525986" duration="8594000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6493000" />
+    <option name="totallyTimeSpent" value="15933000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.46498907" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18710022" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Persistence" order="3" side_tool="true" />
@@ -182,12 +407,12 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32998884" />
       <window_info anchor="bottom" id="Spring" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Grails Console" order="13" weight="0.2972973" />
+      <window_info anchor="bottom" id="Grails Console" order="13" weight="0.29319954" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -249,32 +474,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/livraria2/LivrariaController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/livraria/index.gsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="51" column="53" selection-start-line="51" selection-start-column="53" selection-end-line="51" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/assets/images/apple-touch-icon.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -290,19 +489,155 @@
     <entry file="file://$PROJECT_DIR$/grails-app/assets/images/skin/database_delete.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/assets/stylesheets/errors.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/assets/images/skin/database_save.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/assets/stylesheets/application.css">
+    <entry file="file://$PROJECT_DIR$/grails-app/assets/admin/bootstrap/js/tab.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/assets/stylesheets/errors.css">
+    <entry file="file://$PROJECT_DIR$/grails-app/assets/admin/plugins/pace/pace.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/assets/admin/dist/js/pages/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4252" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/assets/admin/font-awesome/css/font-awesome.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/assets/admin/Ionicons/css/ionicons.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/assets/admin/jvectormap/lib/proj.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/assets/admin/jquery/src/css/var/swap.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/livraria/_heard.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-248">
+          <caret line="140" column="42" selection-start-line="140" selection-start-column="42" selection-end-line="140" selection-end-column="42" />
+          <folding>
+            <element signature="n#a#0;n#header#0;n#!!top" />
+            <element signature="n#li#1;n#ul#0;n#div#0;n#nav#0;n#header#0;n#!!top" />
+            <element signature="n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#0;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#1;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#2;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#3;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/assets/admin/chart.js/src/Chart.Bar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/assets/stylesheets/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="36" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main2.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/assets/stylesheets/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/assets/stylesheets/application2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/livraria2/LivrariaController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/livraria/index.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/assets/javascripts/application2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/assets/javascripts/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/livraria/login.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-72">
+          <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="64" column="18" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -313,7 +648,7 @@
         <entry key="Livraria2">
           <value>
             <GrailsSettings>
-              <option name="buildConfigCrc" value="-297540241" />
+              <option name="buildConfigCrc" value="616277978" />
               <option name="pluginDependenciesCrc" value="1682136675" />
               <option name="properties">
                 <map>

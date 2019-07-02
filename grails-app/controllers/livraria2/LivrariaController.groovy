@@ -7,9 +7,12 @@ import livraria2.UsuarioPermissao
 
 class LivrariaController {
     def cadastroService
+    def springSecurityService
+    def usuarioService
 
     def index() {
-        String nome = "Lucas Lima"
+        String nome = usuarioService.nome()?.nome
+
         render (view: "index", model: [profile:nome])
     }
     def login(){

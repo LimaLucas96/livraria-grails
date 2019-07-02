@@ -27,7 +27,7 @@
                         <li class="user-header">
                             <img src="/Livraria2/assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                             <p>
-                                ${nome}
+                                ${profile}
                             </p>
                         </li>
                         <!-- Menu Footer-->

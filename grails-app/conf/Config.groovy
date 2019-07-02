@@ -115,3 +115,38 @@ log4j.main = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
+
+
+// Added by the Spring Security Core plugin:
+grails.plugin.springsecurity.userLookup.userDomainClassName = 'livraria2.Usuario'
+grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'livraria2.UsuarioPermissao'
+grails.plugin.springsecurity.authority.className = 'livraria2.Permissao'
+
+grails.plugin.springsecurity.auth.loginFormUrl = '/livraria/login'
+grails.plugin.springsecurity.logout.afterLogoutUrl = '/livraria/logout'
+grails.plugin.springsecurity.successHandler.defaultTargetUrl = '/livraria/index'
+grails.plugin.springsecurity.failureHandler.defaultFailureUrl = '/livraria/login?msg=ERROR'
+grails.plugin.springsecurity.successHandler.alwaysUseDefault = false
+grails.plugin.springsecurity.dao.hideUserNotFoundExceptions = false
+grails.plugin.springsecurity.adh.errorPage = '/j_spring_security_logout'
+grails.plugin.springsecurity.password.algorithm = 'SHA-256'
+
+grails.plugin.springsecurity.securityConfigType = 'InterceptUrlMap'
+
+grails.plugin.springsecurity.interceptUrlMap = [
+        [pattern: '/livraria/index',      access: ['ROLE_ADMIN','ROLE_CLIENTE']],
+        [pattern: '/livraria/login',      access: ['permitAll']],
+        [pattern: '/**',                  access: ['permitAll']]
+
+]
+grails.plugin.springsecurity.controllerAnnotations.staticRules = [
+	'/':                ['permitAll'],
+	'/index':           ['permitAll'],
+	'/index.gsp':       ['permitAll'],
+	'/assets/**':       ['permitAll'],
+	'/**/js/**':        ['permitAll'],
+	'/**/css/**':       ['permitAll'],
+	'/**/images/**':    ['permitAll'],
+	'/**/favicon.ico':  ['permitAll']
+]
+

@@ -16,11 +16,11 @@
 <body>
     <!--Barra Lateral -->
     <aside class="main-sidebar">
-        <h1>BUCETA</h1>
+        <h1>TESTANDO</h1>
     </aside>
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
-        BUTICP
+        <a href="${request.contextPath}/j_spring_security_logout">sair</a>
     </div>
 </body>
 </html>

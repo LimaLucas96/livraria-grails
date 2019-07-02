@@ -19,8 +19,11 @@
         <h1>TESTANDO</h1>
     </aside>
     <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-        <a href="${request.contextPath}/j_spring_security_logout">sair</a>
+    <div class="content-wrapper" >
+        <sec:ifAllGranted roles="ROLE_ADMIN">
+            <g:render template="bodyAdmin" model="[profile:profile]"/>
+        </sec:ifAllGranted>
+        <%--<a href="${request.contextPath}/j_spring_security_logout">sair</a> --%>
     </div>
 </body>
 </html>

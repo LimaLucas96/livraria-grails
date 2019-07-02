@@ -7,7 +7,7 @@ class UsuarioService {
     def springSecurityService
     def nome() {
         String user = springSecurityService.principal.username
-        def usuario = Usuario.findByUsername(user)
-        ["nome" : usuario.nome]
+        String usuario = Usuario.findByUsername(user).nome
+        ["nome" : usuario]
     }
 }

@@ -11,9 +11,12 @@ class LivrariaController {
     def usuarioService
 
     def index() {
+        def retorno = [:]
         String nome = usuarioService.nome()?.nome
 
-        render (view: "index", model: [profile:nome])
+        retorno["nome"] = nome
+        //criar para estoque
+        render (view: "index", model:[ "profile" : retorno])
     }
     def login(){
          render(view: "login")

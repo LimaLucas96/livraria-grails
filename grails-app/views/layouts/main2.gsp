@@ -23,7 +23,7 @@
     <g:layoutHead/>
 </head>
 
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition layout-boxed skin-blue sidebar-collapse sidebar-mini">
     <div class="wrapper">
         <g:render template="heard" model="[profile:profile]"></g:render>
         <g:layoutBody/>

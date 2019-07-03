@@ -21,6 +21,14 @@ class LivrariaController {
     def login(){
          render(view: "login")
     }
+    def cadastroLivro(){
+        def retorno = [:]
+        retorno["nome"] = usuarioService.nome()?.nome
+        render(view: "cadastroLivro", model: ["profile" : retorno])
+    }
+    def cadastrarLivro(){
+        redirect(action: "cadastroLivro",params: [msg:"OK"])
+    }
     def logout(){
         redirect(action: "login")
     }

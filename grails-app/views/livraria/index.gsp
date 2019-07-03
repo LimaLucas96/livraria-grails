@@ -15,9 +15,7 @@
 
 <body>
     <!--Barra Lateral -->
-    <aside class="main-sidebar">
-        <h1>TESTANDO</h1>
-    </aside>
+    <g:render template="sidebarAdmin" />
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper" >
         <sec:ifAllGranted roles="ROLE_ADMIN">

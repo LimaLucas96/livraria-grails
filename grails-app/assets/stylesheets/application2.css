@@ -13,4 +13,5 @@
 *= require jvectormap/jquery-jvectormap
 *= require dist/css/AdminLTE.min
 *= require dist/css/skins/_all-skins.min
+*= require datatables.net-bs/css/dataTables.bootstrap.min
 */

@@ -36,7 +36,7 @@
 
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                 <h4><i class="icon fa fa-ban"></i>Ops...!</h4>
-                <h5>Tivemos um problema ao salvar o livro.</h5>
+                <h5>Tivemos um problema ao salvar o livro. Verifique se o o livro ja existe no estoque.</h5>
             </div>
         </g:elseif>
     </section>

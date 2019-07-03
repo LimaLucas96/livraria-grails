@@ -22,11 +22,10 @@ class InventarioService {
         livro.estoque = estoque
 
         String[] autors = autor.split(";")
-        println(autors.length + " <----------")
+
         for(int i = 0; i < autors.length; i++){
             Autor autor1 = Autor.findByNome(autors[i])
-            println(autors[i])
-            println(autor1)
+
             if(autor1 == null){
                 autor1 = new Autor()
             }
@@ -42,5 +41,19 @@ class InventarioService {
         }else{
             println("----> MERDAAAAAAAA")
         }
+    }
+
+    def inventarioLivros(){
+        def retorno = [].withDefault {[:]}
+        def livros = Livro.list()
+
+        for (int i = 0 ; i < livros.size(); i ++){
+            retorno[i]["nomes"] = livros[i].nome
+            retorno[i]["autores"] = livros[i].autor.nome
+            retorno[i]["quantidadeEstoque"] = livros[i].estoque.quantidadeTotal
+            retorno[i]["quantidadeAlugados"] = livros[i].estoque.quantidadeTotal - livros[i].estoque.quantidadeDisponivel
+        }
+
+        return retorno
     }
 }

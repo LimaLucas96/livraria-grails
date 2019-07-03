@@ -35,4 +35,37 @@
         </div>
     </div>
 
+    <div class="row">
+        <!--Tabela com todos os livros-->
+        <div class="col-md-8 col-xs-12">
+            <div class="box box-success">
+                <div class="box-header">
+                    <h3 class="box-title">Lista de Livros</h3>
+                </div>
+                <div class="box-body">
+                    <table id="listaLivros" class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>Titulo</th>
+                                <th>Autores</th>
+                                <th>Quantidade no Estoque</th>
+                                <th>Quantidade Alugados</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <g:each in="${profile.livros}" var="livro">
+                                <tr>
+                                    <td>${livro.nomes}</td>
+                                    <td>${livro.autores}</td>
+                                    <td>${livro.quantidadeEstoque}</td>
+                                    <td>${livro.quantidadeAlugados}</td>
+                                </tr>
+                            </g:each>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </section>

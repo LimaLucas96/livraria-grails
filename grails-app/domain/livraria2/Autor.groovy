@@ -5,7 +5,7 @@ class Autor {
     String nome
 
     static hasMany = [livro:Livro]
-    static belongsTo = [Livro]
+
     static constraints = {
         nome nullable: false, blank: false
     }

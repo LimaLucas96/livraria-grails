@@ -9,6 +9,7 @@ class LivrariaController {
     def cadastroService
     def springSecurityService
     def usuarioService
+    def inventarioService
 
     def index() {
         def retorno = [:]
@@ -27,12 +28,16 @@ class LivrariaController {
         render(view: "cadastroLivro", model: ["profile" : retorno])
     }
     def cadastrarLivro(){
-        redirect(action: "cadastroLivro",params: [msg:"OK"])
+        def result = inventarioService.salvarLivro(params.nome,params.nomeAutor,params.numeroPaginas,params.quantidadeLivros)
+
+        if(result.success){
+            redirect(action: "cadastroLivro",params: [msg:"OK"])
+        }else{
+            redirect(action: "cadastroLivro",params: [msg:"ERROR"])
+        }
     }
     def logout(){
         redirect(action: "login")
-    }
-    def erro(){
     }
     def cadastro(){
         render(view: "cadastro")

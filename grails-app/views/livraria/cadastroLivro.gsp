@@ -31,6 +31,14 @@
                 <h5> Livro foi cadastrado com sucesso.</h5>
             </div>
         </g:if>
+        <g:elseif test="${params.msg == 'ERROR'}">
+            <div class="alert alert-error alert-dismissible">
+
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <h4><i class="icon fa fa-ban"></i>Ops...!</h4>
+                <h5>Tivemos um problema ao salvar o livro.</h5>
+            </div>
+        </g:elseif>
     </section>
 
     <section class="content">
@@ -51,9 +59,15 @@
                             <g:textField name="nomeAutor" class="form-control" placeholder="Autor(es)"/>
                             <p class="help-block">Separe os nomes dos autores com ";"</p>
                         </div>
-                        <div class="form-group">
-                            <label>Quantidade de paginas</label>
-                            <input type="number" name="numeroPaginas" class="form-control" placeholder="Quantidade de paginas"/>
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <label>Quantidade de paginas</label>
+                                <input type="number" name="numeroPaginas" class="form-control" placeholder="Quantidade de paginas"/>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label>Quantidade de livros</label>
+                                <input type="number" name="quantidadeLivros" class="form-control" placeholder="Quantidade de paginas"/>
+                            </div>
                         </div>
                     </div>
                     <div class="box-footer">

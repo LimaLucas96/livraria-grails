@@ -44,16 +44,8 @@ class InventarioService {
     }
 
     def inventarioLivros(){
-        def retorno = [].withDefault {[:]}
         def livros = Livro.list()
 
-        for (int i = 0 ; i < livros.size(); i ++){
-            retorno[i]["nomes"] = livros[i].nome
-            retorno[i]["autores"] = livros[i].autor.nome
-            retorno[i]["quantidadeEstoque"] = livros[i].estoque.quantidadeTotal
-            retorno[i]["quantidadeAlugados"] = livros[i].estoque.quantidadeTotal - livros[i].estoque.quantidadeDisponivel
-        }
-
-        return retorno
+        return livros
     }
 }

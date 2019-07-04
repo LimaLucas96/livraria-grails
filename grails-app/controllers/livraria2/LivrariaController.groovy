@@ -1,49 +1,37 @@
 package livraria2
 
 import grails.converters.JSON
-import livraria2.Usuario
-import livraria2.Permissao
-import livraria2.UsuarioPermissao
+import grails.plugin.springsecurity.annotation.Secured
 
 class LivrariaController {
     def cadastroService
     def springSecurityService
-    def usuarioService
-    def inventarioService
 
+    @Secured(['ROLE_ADMIN'])
     def index() {
-        def retorno = [:]
+
+        redirect(controller: 'admin', action: 'index')
+
+/*        def retorno = [:]
         String nome = usuarioService.nome()?.nome
         //def teste = inventarioService.inventarioLivros()
         retorno["nome"] = nome
         retorno["livros"] = inventarioService.inventarioLivros()
        // println(teste)
         //criar para estoque
-        render (view: "index", model:[ "profile" : retorno])
+        render (view: "index", model:[ "profile" : retorno])*/
     }
     def login(){
          render(view: "login")
     }
-    def cadastroLivro(){
-        def retorno = [:]
-        retorno["nome"] = usuarioService.nome()?.nome
-        render(view: "cadastroLivro", model: ["profile" : retorno])
-    }
-    def cadastrarLivro(){
-        def result = inventarioService.salvarLivro(params.nome,params.nomeAutor,params.numeroPaginas,params.quantidadeLivros)
 
-        if(result.success){
-            redirect(action: "cadastroLivro",params: [msg:"OK"])
-        }else{
-            redirect(action: "cadastroLivro",params: [msg:"ERROR"])
-        }
-    }
     def logout(){
         redirect(action: "login")
     }
     def cadastro(){
         render(view: "cadastro")
     }
+
     def registrarUsuario(){
         def result = cadastroService.criarUsuario(params.nome,params.email,params.username,params.password, params.checkbox)
 

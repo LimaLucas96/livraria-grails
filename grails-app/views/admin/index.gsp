@@ -25,6 +25,7 @@
 </head>
 <body>
     <!--Barra Lateral -->
+
     <g:render template="sidebarAdmin" />
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper" >

@@ -1,4 +1,5 @@
 <section class="content-header">
+
     <h1>Principal</h1>
     <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-home"></i> Principal</a></li>
@@ -56,10 +57,10 @@
                         <tbody>
                             <g:each in="${profile.livros}" var="livro">
                                 <tr>
-                                    <td>${livro.nomes}</td>
-                                    <td>${livro.autores}</td>
-                                    <td>${livro.quantidadeEstoque}</td>
-                                    <td>${livro.quantidadeAlugados}</td>
+                                    <td>${livro.nome}</td>
+                                    <td>${livro.autor.nome}</td>
+                                    <td>${livro.estoque.quantidadeTotal}</td>
+                                    <td>${livro.estoque.quantidadeDisponivel}</td>
                                 </tr>
                             </g:each>
                         </tbody>

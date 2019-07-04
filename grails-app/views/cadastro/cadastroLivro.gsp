@@ -48,7 +48,7 @@
                     <h3 class="box-title">Cadastrar Livro</h3>
                 </div>
 
-                <g:form name="frmCadastroLivro" url="[controller: 'livraria',action: 'cadastrarLivro']">
+                <g:form name="frmCadastroLivro" url="[controller: 'cadastro',action: 'salvarLivro']">
                     <div class="box-body">
                         <div class="form-group">
                             <label>Nome do Livro</label>

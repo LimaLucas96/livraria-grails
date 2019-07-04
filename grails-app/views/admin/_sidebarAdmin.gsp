@@ -11,7 +11,7 @@
                     <i class="fa fa-database"></i><span>Cadastrar Livro</span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="${createLink(controller: 'livraria', action: 'cadastroLivro')}"><i class="fa fa-circle-o"></i>Livro</a> </li>
+                    <li><a href="${createLink(controller: 'cadastro', action: 'cadastroLivro')}"><i class="fa fa-circle-o"></i>Livro</a> </li>
                     <li><a href="#"><i class="fa fa-circle-o"></i>Administrador</a> </li>
                 </ul>
             </li>

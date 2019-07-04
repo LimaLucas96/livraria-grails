@@ -36,7 +36,8 @@
     </div>
 
     <div class="row">
-        <!--Tabela com todos os livros-->
+        <!--  -->
+        <!-- Tabela com todos os livros -->
         <div class="col-md-8 col-xs-12">
             <div class="box box-success">
                 <div class="box-header">
@@ -65,6 +66,8 @@
                     </table>
                 </div>
             </div>
+        </div>
+        <div class="col-md-4">
         </div>
     </div>
 

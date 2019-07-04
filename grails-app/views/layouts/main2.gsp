@@ -16,11 +16,12 @@
     <title><g:layoutTitle default="Livraria"/></title>
 
     <asset:stylesheet src="application2.css"/>
-
-
+    <asset:javascript src="application2.js"/>
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
     <g:layoutHead/>
+
+
 </head>
 
 <body class="hold-transition layout-boxed skin-blue sidebar-collapse sidebar-mini">
@@ -28,6 +29,6 @@
         <g:render template="heard" model="[profile:profile]"></g:render>
         <g:layoutBody/>
     </div>
-<asset:javascript src="application2.js"/>
+
 </body>
 </html>

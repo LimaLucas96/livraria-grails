@@ -22,16 +22,6 @@
 //= require jquery-slimscroll/jquery.slimscroll.min
 
 
-$(document).ready(function () {
-	$('#listaLivros').dataTable({
-		'pading':true,
-		'lengthChange':false
-	});
-});
-
-
-
-
 
 if (typeof jQuery !== 'undefined') {
 	(function($) {

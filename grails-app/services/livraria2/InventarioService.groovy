@@ -7,10 +7,10 @@ class InventarioService {
 
     def salvarLivro(String nome,String autor, String numPaginas, String quantidadeLivros) {
         Livro livro = Livro.findByNome(nome)
-        if(livro == null){
+        if(livro == null && numPaginas != "" && quantidadeLivros != ""){
             livro = new Livro()
         }else {
-           return [success: false]
+            return [success: false]
         }
         livro.nome = nome
         livro.numeroPaginas = numPaginas.toInteger()
@@ -39,7 +39,7 @@ class InventarioService {
             livro.save(flush: true)
             [success: true]
         }else{
-            println("----> MERDAAAAAAAA")
+            [success: false]
         }
     }
 

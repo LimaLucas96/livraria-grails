@@ -1,9 +1,12 @@
 package livraria2
 
+import grails.converters.JSON
+
 class CadastroController {
 
     def usuarioService
     def inventarioService
+    def cadastroService
 
     def cadastroLivro() {
         def retorno = [:]
@@ -20,5 +23,11 @@ class CadastroController {
         }else{
             redirect(action: "cadastroLivro",params: [msg:"ERROR"])
         }
+    }
+
+    def salvarUsuario(){
+        def result = cadastroService.criarUsuario(params.nome,params.email,params.username,params.password, params.checkbox)
+
+        render result as JSON
     }
 }

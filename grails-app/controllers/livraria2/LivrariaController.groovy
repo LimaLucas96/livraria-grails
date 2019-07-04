@@ -4,7 +4,6 @@ import grails.converters.JSON
 import grails.plugin.springsecurity.annotation.Secured
 
 class LivrariaController {
-    def cadastroService
     def springSecurityService
 
     @Secured(['ROLE_ADMIN'])
@@ -29,12 +28,6 @@ class LivrariaController {
         redirect(action: "login")
     }
     def cadastro(){
-        render(view: "cadastro")
-    }
-
-    def registrarUsuario(){
-        def result = cadastroService.criarUsuario(params.nome,params.email,params.username,params.password, params.checkbox)
-
-        render result as JSON
+        render(view: "/cadastro/cadastroUsuario")
     }
 }

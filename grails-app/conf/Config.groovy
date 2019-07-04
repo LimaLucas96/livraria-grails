@@ -134,10 +134,11 @@ grails.plugin.springsecurity.password.algorithm = 'SHA-256'
 grails.plugin.springsecurity.securityConfigType = 'InterceptUrlMap'
 
 grails.plugin.springsecurity.interceptUrlMap = [
-        [pattern: '/livraria/index',      access: ['ROLE_ADMIN','ROLE_CLIENTE']],
-        [pattern: '/admin/**',            access: ['ROLE_ADMIN']],
-        [pattern: '/livraria/login',      access: ['permitAll']],
-        [pattern: '/**',                  access: ['permitAll']]
+        [pattern: '/livraria/index',            access: ['ROLE_ADMIN','ROLE_CLIENTE']],
+        [pattern: '/admin/**',                  access: ['ROLE_ADMIN']],
+        [pattern: '/cadastro/cadastroLivro',    access: ['ROLE_ADMIN']],
+        [pattern: '/livraria/login',            access: ['permitAll']],
+        [pattern: '/**',                        access: ['permitAll']]
 
 ]
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [

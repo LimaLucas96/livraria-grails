@@ -66,7 +66,7 @@
     <div class="register-box-body">
         <p class="login-box-msg">Registre-se</p>
 
-        <g:formRemote name="frmRegister" url="[controller:'livraria', action:'registrarUsuario']" onSuccess="retornoFormulario(data)">
+        <g:formRemote name="frmRegister" url="[controller:'cadastro', action:'salvarUsuario']" onSuccess="retornoFormulario(data)">
             <div class="form-group has-feedback">
                 <input type="text" class="form-control" placeholder="Nome completo" name="nome" >
                 <span class="glyphicon glyphicon-user form-control-feedback"></span>

@@ -11,6 +11,7 @@
     <meta name="layout" content="main2">
     <title>pagina inicial</title>
 
+    <asset:javascript src="flotChart.js"/>
 
     <sec:ifAllGranted roles="ROLE_ADMIN">
         <script type="text/javascript">
@@ -20,52 +21,58 @@
                     'lengthChange':false
                 });
             });
-
-            var bar_data = {
-                data : [['Jan', 10],['Fev', 25],['Mar',15],['Apr',13],['May',20],['Jun',40],['Jul',0]],
-                color: '#3c8dbc'
-            };
-            $.plot('#bar-chart',[bar_data],{
-                grid:{
-                    hoverable:true,
-                    borderWidth: 1,
-                    borderColor: '#f3f3f3',
-                    tickColor: '#f3f3f3'
-                },
-                series: {
-                    bars:{
-                        show: true,
-                        barWidth: 0.5,
-                        align: 'center'
+            $(function () {
+                /*
+                 * Flot Interactive Chart
+                 * -----------------------
+                 */
+                // We use an inline data source in the example, usually data would
+                // be fetched from a server
+                var bar_data = {
+                    data : [['Jan', 10], ['Fev', 0], ['Mar', 4], ['Apr', 13], ['Mai', 17], ['Jun', 9],['jul',30],
+                    ['Ago',40],['Set',80]],
+                    color: '#3c8dbc'
+                }
+                $.plot('#bar-chart', [bar_data], {
+                    grid  : {
+                        hoverable:true,
+                        borderWidth: 1,
+                        borderColor: '#f3f3f3',
+                        tickColor  : '#f3f3f3'
+                    },
+                    series: {
+                        bars: {
+                            show    : true,
+                            barWidth: 0.8,
+                            align   : 'center'
+                        }
+                    },
+                    xaxis : {
+                        mode      : 'categories',
+                        tickLength: 0
                     }
-                },
-                xaxis : {
-                    mode      : 'categories',
-                    tickLength: 0
-                },
-                points:{
-                    show:true
-                }
-            });
-            $('<div class="tooltip-inner" id="bar-chart-tooltip"></div>').css({
-                position: 'absolute',
-                display : 'none',
-                opacity : 0.8
-            }).appendTo('body');
+                })
+                $('<div class="tooltip-inner" id="bar-chart-tooltip"></div>').css({
+                    position: 'absolute',
+                    display : 'none',
+                    opacity : 0.8
+                }).appendTo('body')
 
-            $('#bar-chart').bind('plothover', function (event, pos, item) {
-                if (item) {
-                    var x = item.datapoint[0].toFixed(2),
-                        y = item.datapoint[1].toFixed(2);
+                $('#bar-chart').bind('plothover', function (event, pos, item) {
+                    console.log(item)
+                    if (item) {
+                        var x = item.datapoint[0].toFixed(2),
+                            y = item.datapoint[1].toFixed(2)
 
-                    $('#bar-chart-tooltip').html(item.series.label + ' of ' + x + ' = ' + y)
-                        .css({ top: item.pageY + 5, left: item.pageX + 5 })
-                        .fadeIn(200)
-                } else {
-                    $('#bar-chart-tooltip').hide()
-                }
+                        $('#bar-chart-tooltip').html(item.series.label + ' of ' + x + ' = ' + y)
+                            .css({ top: item.pageY + 5, left: item.pageX + 5 })
+                            .fadeIn(200)
+                    } else {
+                        $('#bar-chart-tooltip').hide()
+                    }
 
-            });
+                })
+            })
         </script>
     </sec:ifAllGranted>
 </head>
@@ -73,7 +80,7 @@
     <!--Barra Lateral -->
 
     <g:render template="sidebarAdmin" />
-    <!-- Content Wrapper. Contains page content -->
+
     <div class="content-wrapper" >
         <sec:ifAllGranted roles="ROLE_ADMIN">
             <g:render template="bodyAdmin" model="[profile:profile]"/>

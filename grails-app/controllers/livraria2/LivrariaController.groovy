@@ -6,20 +6,16 @@ import grails.plugin.springsecurity.annotation.Secured
 class LivrariaController {
     def springSecurityService
 
-    @Secured(['ROLE_ADMIN'])
     def index() {
-
-        redirect(controller: 'admin', action: 'index')
-
-/*        def retorno = [:]
-        String nome = usuarioService.nome()?.nome
-        //def teste = inventarioService.inventarioLivros()
-        retorno["nome"] = nome
-        retorno["livros"] = inventarioService.inventarioLivros()
-       // println(teste)
-        //criar para estoque
-        render (view: "index", model:[ "profile" : retorno])*/
+        String autenticacao = springSecurityService.authentication.authorities
+        println(autenticacao == "[ROLE_ADMIN]")
+        if(autenticacao == "[ROLE_ADMIN]"){
+            redirect(controller: 'admin', action: 'index')
+        }else if(autenticacao == "[ROLE_CLIENTE]"){
+            redirect(controller: 'usuario', action: 'index')
+        }
     }
+
     def login(){
          render(view: "login")
     }

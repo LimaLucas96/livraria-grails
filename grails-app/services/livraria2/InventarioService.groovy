@@ -48,4 +48,10 @@ class InventarioService {
 
         return livros
     }
+
+    def livrosDisponiveis(){
+        def livros = Estoque.findAllByQuantidadeDisponivelGreaterThanEquals(1)
+
+        return livros
+    }
 }

@@ -65,8 +65,8 @@
                             <tr>
                                 <th>Titulo</th>
                                 <th>Autores</th>
+                                <th>Quantidade total</th>
                                 <th>Quantidade no Estoque</th>
-                                <th>Quantidade Alugados</th>
                             </tr>
                         </thead>
                         <tbody>

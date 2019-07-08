@@ -17,15 +17,24 @@
             $('#listaLivro').dataTable({
                 'pading':true,
                 'lengthChange':false
-            })
+            });
         });
         function adicionarLivro(id) {
+
             $.ajax({
                 method: 'POST',
                 url: 'adicionarAluguel',
                 data:{"id" : id},
-                success: function () {
+                success: function (data) {
+                    if(data.mensagem == "OK"){
+                        $('#modalSuccess').modal('show');
+                    }else if(data.mensagem == "ERROR"){
+                        $('#modalError').modal('show');
+                    }else if(data.mensagem == "ERROR_NUM_MAX"){
+                        $('#modalErroMax').modal('show');
+                    }
                     //criar modal para exibir mensagem de sucesso ou erro
+
                 }
             })
         }
@@ -52,27 +61,71 @@
                         <div class="box-body">
                             <table id="listaLivro" class="table table-bordered table-hover">
                                 <thead>
-                                    <tr>
-                                        <th>Titulo</th>
-                                        <th>Autor(es)</th>
-                                        <th>Poções</th>
-                                    </tr>
+                                <tr>
+                                    <th>Titulo</th>
+                                    <th>Autor(es)</th>
+                                    <th>Opções</th>
+                                </tr>
                                 </thead>
                                 <tbody>
-                                    <g:each in="${profile.livros}" var="livro">
-
-                                        <tr>
-                                            <td>${livro.livro.nome}</td>
-                                            <td>${livro.livro.autor.nome}</td>
-                                            <td><a href="javascript: adicionarLivro(${livro.livro.id})">Alugar</a></td>
-                                        </tr>
-                                    </g:each>
+                                <g:each in="${profile.livros}" var="livro">
+                                    <tr>
+                                        <td>${livro.livro.nome}</td>
+                                        <td>${livro.livro.autor.nome}</td>
+                                        <td><a href="javascript: adicionarLivro(${livro.livro.id})">Alugar</a></td>
+                                    </tr>
+                                </g:each>
                                 </tbody>
                             </table>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Modal Success -->
+            <div class="modal text-center fade" id="modalSuccess">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Sucesso!</h4>
+                        </div>
+                        <div class="modal-body">
+                            <h5>Você alugou o livro com sucesso!</h5>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Modal Success -->
+            <!-- Modal Error -->
+            <div class="modal text-center fade" id="modalError">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Erro!</h4>
+                        </div>
+                        <div class="modal-body">
+                            <h5>Não foi possivel alugar o livro.</h5>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Modal Error -->
+            <!-- Modal Error Aluguel Max -->
+            <div class="modal text-center fade" id="modalErroMax">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Erro!</h4>
+                        </div>
+                        <div class="modal-body">
+                            <h5>Você excedeu o numero maximo de alugueis.</h5>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Modal Error Aluguel Max -->
         </section>
     </div>
 </body>

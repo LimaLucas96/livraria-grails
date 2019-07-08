@@ -13,7 +13,8 @@ class Usuario implements Serializable {
 
 	String nome
 	String email
-	Aluguel aluguel
+
+	static hasMany = [aluguel: Aluguel]
 
 	String username
 	String password

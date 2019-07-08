@@ -10,4 +10,10 @@ class UsuarioService {
         String usuario = Usuario.findByUsername(user).nome
         ["nome" : usuario]
     }
+    def id(){
+        String user = springSecurityService.principal.username
+        String id = Usuario.findByUsername(user).id
+        return id
+    }
+
 }

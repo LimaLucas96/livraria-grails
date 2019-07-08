@@ -23,11 +23,12 @@
                         </tr>
                         </thead>
                         <tbody>
-                            <h1 >NENHUM LIVRO ALUGADO</h1>
-                            <g:each in="${profile.livros}" var="livro">
+                            %{--<h1 >NENHUM LIVRO ALUGADO</h1>--}%
+                            <g:each in="${profile.livros}" var="aluguel">
                                 <tr>
-%{--                                    <td>${livro.nome}</td>
-                                    <td>${livro.autor.nome}</td>--}%
+                                    <td>${aluguel.livro.nome}</td>
+                                    <td>${aluguel.livro.autor.nome}</td>
+                                    <td>${aluguel.dataAluguel}</td>
                                 </tr>
                             </g:each>
                         </tbody>

@@ -5,6 +5,8 @@ import grails.transaction.Transactional
 @Transactional
 class InventarioService {
 
+    int NUM_MAX_ALUGUEL = 3
+
     def salvarLivro(String nome,String autor, String numPaginas, String quantidadeLivros) {
         Livro livro = Livro.findByNome(nome)
         if(livro == null && numPaginas != "" && quantidadeLivros != ""){
@@ -39,6 +41,7 @@ class InventarioService {
             livro.save(flush: true)
             [success: true]
         }else{
+            println(livro.getErrors())
             [success: false]
         }
     }
@@ -51,7 +54,60 @@ class InventarioService {
 
     def livrosDisponiveis(){
         def livros = Estoque.findAllByQuantidadeDisponivelGreaterThanEquals(1)
-
         return livros
+    }
+    def alugarLivro(String idLivro, String idUsuario){
+
+        if(numLivrosAlugados(idUsuario) >= NUM_MAX_ALUGUEL){
+            return "ERROR_NUM_MAX"
+        }
+
+        Usuario usuario = Usuario.get(idUsuario)
+        Livro livro = Livro.get(idLivro)
+        Aluguel aluguel = new Aluguel()
+        Date data = new Date()
+        //println("data atual - > "+data.getDateString())
+        aluguel.dataAluguel = data
+        aluguel.livro = livro
+        aluguel.usuario = usuario
+
+        aluguel.validate()
+        if(!aluguel.hasErrors()){
+            aluguel.save(flush: true)
+            return "OK"
+        }else{
+            return "ERROR"
+        }
+    }
+    def alugueis(String id){
+        Usuario usuario = Usuario.get(id)
+        def alu = Aluguel.createCriteria().list {
+            and {
+                eq 'usuario', usuario
+                isNull("dataEntrega")
+            }
+        }.size()
+        println(alu)
+    }
+
+    def numLivrosAlugados(String id){
+        Usuario usuario = Usuario.get(id)
+        def numA = Aluguel.createCriteria().list {
+            and {
+                eq 'usuario', usuario
+                isNull("dataEntrega")
+            }
+        }.size()
+        return numA
+    }
+    def alugueisUsuario( String id ){
+        Usuario usuario = Usuario.get(id)
+        def lista = Aluguel.createCriteria().list {
+            and{
+                eq 'usuario', usuario
+            }
+        }
+
+        return lista
     }
 }

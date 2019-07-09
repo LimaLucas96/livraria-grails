@@ -11,6 +11,11 @@
                     <i class="fa fa-files-o"></i><span>Alugar Livro</span>
                 </a>
             </li>
+            <li>
+                <a href="${g.createLink(controller: 'usuario', action: 'devolverLivro')}">
+                    <i class="glyphicon glyphicon-download-alt"></i><span>Devolver Livro</span>
+                </a>
+            </li>
         </ul>
     </section>
 </aside>

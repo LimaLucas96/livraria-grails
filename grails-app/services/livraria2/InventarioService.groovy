@@ -65,7 +65,7 @@ class InventarioService {
         Usuario usuario = Usuario.get(idUsuario)
         Livro livro = Livro.get(idLivro)
         Aluguel aluguel = new Aluguel()
-        Date data = new Date()
+        Date data = new Date().clearTime()
         //println("data atual - > "+data.getDateString())
         aluguel.dataAluguel = data
         aluguel.livro = livro
@@ -74,6 +74,7 @@ class InventarioService {
         aluguel.validate()
         if(!aluguel.hasErrors()){
             aluguel.save(flush: true)
+            livro.estoque.quantidadeDisponivel --
             return "OK"
         }else{
             return "ERROR"
@@ -105,6 +106,7 @@ class InventarioService {
         def lista = Aluguel.createCriteria().list {
             and{
                 eq 'usuario', usuario
+                isNull 'dataEntrega'
             }
         }
 

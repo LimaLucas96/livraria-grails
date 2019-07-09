@@ -10,7 +10,7 @@
             <div class="box box-danger">
                 <div class="box-header">
                     <i class="fa fa-book"></i>
-                    <h3 class="box-title">LISTA DE LIVROS ALUGADOS</h3>
+                    <h3 class="box-title">Minha lista de Livros alugados</h3>
                 </div>
                 <div class="box-body">
 

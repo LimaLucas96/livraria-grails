@@ -108,7 +108,7 @@ class InventarioService {
         Livro livro = aluguel.livro
         Date dataHoje = new Date().clearTime()
         Date dataAluguel = aluguel.dataAluguel
-        //dataHoje += 2
+        dataHoje += 9
         livro.estoque.quantidadeDisponivel ++
         aluguel.dataEntrega = dataHoje
 
@@ -116,7 +116,7 @@ class InventarioService {
             int diasBloqueados = dataHoje - dataAluguel
             Usuario usuario = aluguel.usuario
             usuario.bloqueioTemporario = true
-            usuario.dataDesbloqueio = (dataHoje + diasBloqueados)
+            usuario.dataDesbloqueio = (dataHoje + (2*diasBloqueados))
         }
 
         return "OK"

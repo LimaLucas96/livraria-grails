@@ -33,7 +33,7 @@
                 success:function (data) {
                     if(data.mensagem == "OK") {
                         carregarLista();
-                      //  $("#listaLivro").dataTable().ajax.reload();
+
                         $('#modalSuccess').modal('show')
                     }
                 }

@@ -4,31 +4,35 @@ import grails.transaction.Transactional
 
 @Transactional
 class UsuarioService {
-    static def springSecurityService
-    private static Usuario usuario = Usuario.findByUsername(springSecurityService.principal.username)
+    def springSecurityService
+    //private static Usuario usuario = Usuario.findByUsername(springSecurityService.principal.username)
 
-    static def nome() {
-
-        String nomeUser = usuario.nome
+     def nome() {
+        String user = springSecurityService.principal.username
+        String nomeUser = Usuario.findByUsername(user).nome
         ["nome" : nomeUser]
     }
-    static def id(){
-        return usuario.id
+    def id(){
+        String userId = springSecurityService.principal.id
+        return userId
     }
     boolean statusBloqueio(){
-        return usuario.bloqueioTemporario
+        Usuario user = Usuario.get(id())
+        return user.bloqueioTemporario
     }
 
     def dataDesbloqueio(){
-        return usuario.dataDesbloqueio
+        Usuario user = Usuario.get(id())
+        return user.dataDesbloqueio
     }
 
     def verificarBloqueio(){
+        Usuario usuario = Usuario.get(id())
         Date dataHoje = new Date().clearTime()
 
-        if (dataHoje - dataDesbloqueio() <= 1){
-            usuario.dataDesbloqueio = null
+        if (dataHoje - dataDesbloqueio() >= 0 && statusBloqueio()){
             usuario.bloqueioTemporario = false
         }
     }
+
 }

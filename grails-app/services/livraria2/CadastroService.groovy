@@ -17,6 +17,7 @@ class CadastroService {
         usuario.accountExpired = false
         usuario.accountLocked = false
         usuario.passwordExpired = false
+        usuario.dataDesbloqueio = new Date().clearTime()
 
         usuario.validate()
         if(!usuario.hasErrors() && permissao != null && checkbox != null){

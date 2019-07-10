@@ -12,8 +12,12 @@ class UsuarioController {
         retorno["nome"] = usuarioService.nome()?.nome
         retorno["livros"] = inventarioService.alugueisUsuario(usuarioService.id())
 
+        usuarioService.verificarBloqueio()
+
         if(usuarioService.statusBloqueio()){
-            usuarioService.verificarBloqueio()
+            retorno["status"] = "bloqueado"
+        }else {
+            retorno["status"] = "ativo"
         }
 
         render(view: 'index', model: ["profile" : retorno])
@@ -23,6 +27,15 @@ class UsuarioController {
         def retorno = [:]
         retorno["nome"] = usuarioService.nome()?.nome
         retorno["livros"] = inventarioService.livrosDisponiveis()
+
+        usuarioService.verificarBloqueio()
+
+        if(usuarioService.statusBloqueio()){
+            retorno["status"] = "bloqueado"
+    }else {
+            retorno["status"] = "ativo"
+        }
+
         render(view: 'alugarLivro', model: ["profile" : retorno])
     }
 
@@ -41,7 +54,7 @@ class UsuarioController {
     def devolucaoLivro(){
         def retorno = [:]
 
-        retorno["mensagem"] = inventarioService.devolicao(params.id)
+        retorno["mensagem"] = inventarioService.devolucao(params.id)
 
         render retorno as JSON
     }

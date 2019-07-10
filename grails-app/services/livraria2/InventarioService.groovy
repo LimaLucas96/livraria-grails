@@ -57,12 +57,14 @@ class InventarioService {
         return livros
     }
     def alugarLivro(String idLivro, String idUsuario){
+        Usuario usuario = Usuario.get(idUsuario)
 
-        if(numLivrosAlugados(idUsuario) >= NUM_MAX_ALUGUEL){
+        if( usuario.bloqueioTemporario){
+            return "ERROR_USER_BLOC"
+        } else if(numLivrosAlugados(idUsuario) >= NUM_MAX_ALUGUEL){
             return "ERROR_NUM_MAX"
         }
 
-        Usuario usuario = Usuario.get(idUsuario)
         Livro livro = Livro.get(idLivro)
         Aluguel aluguel = new Aluguel()
         Date data = new Date().clearTime()
@@ -103,18 +105,19 @@ class InventarioService {
         return lista
     }
 
-    def devolicao(String id){
+    def devolucao(String id){
         Aluguel aluguel = Aluguel.get(id)
         Livro livro = aluguel.livro
         Date dataHoje = new Date().clearTime()
         Date dataAluguel = aluguel.dataAluguel
-        dataHoje += 9
+        dataHoje += 10 //<-------------------------------------temporario!!!!!!
         livro.estoque.quantidadeDisponivel ++
         aluguel.dataEntrega = dataHoje
 
         if(dataHoje - dataAluguel > 7 ){
             int diasBloqueados = dataHoje - dataAluguel
             Usuario usuario = aluguel.usuario
+
             usuario.bloqueioTemporario = true
             usuario.dataDesbloqueio = (dataHoje + (2*diasBloqueados))
         }

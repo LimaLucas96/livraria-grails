@@ -11,16 +11,33 @@
     <meta name="layout" content="main2">
     <title>Devolução de Livros</title>
     <script type="text/javascript">
-        function devolverLivro(id) {
-            $('#modalSuccess').modal('show')
-/*            $.ajax({
-                method: 'POST',
-                url:'devolverLivro',
-                data:{"id":id},
-                success:function () {
+        $(document).ready(function () {
+            carregarLista()
+        });
+        function carregarLista() {
+            $.ajax({
+                method:'POST',
+                url:'carregarListaDevolucao',
+                success:function (data) {
+                    $('#divLista').html(data);
 
                 }
-            })*/
+            })
+        }
+        function devolverLivro(id) {
+           // $("#listaLivro").dataTable().ajax.reload()
+            $.ajax({
+                method: 'POST',
+                url:'devolucaoLivro',
+                data:{"id":id},
+                success:function (data) {
+                    if(data.mensagem == "OK") {
+                        carregarLista();
+                      //  $("#listaLivro").dataTable().ajax.reload();
+                        $('#modalSuccess').modal('show')
+                    }
+                }
+            })
         }
     </script>
 </head>
@@ -36,33 +53,7 @@
         </section>
         <section class="content">
             <div class="row">
-                <div class="col-xs-12">
-                    <div class="box box-success">
-                        <div class="box-header">
-                            <i class="glyphicon glyphicon-book"></i>
-                            <h3 class="box-title">Livros Alugados</h3>
-                        </div>
-                        <div class="box-body">
-                            <table id="listaLivro" class="table table-bordered table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>Titulo</th>
-                                        <th>Autor(es)</th>
-                                        <th>Opções</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <g:each in="${profile.alugueis}" var="aluguel">
-                                        <tr>
-                                            <td>${aluguel.livro.nome}</td>
-                                            <td>${aluguel.livro.autor.nome}</td>
-                                            <td><a href="javascript: devolverLivro(${aluguel.id})">Devolver</a></td>
-                                        </tr>
-                                    </g:each>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                <div class="col-xs-12" id="divLista">
                 </div>
             </div>
             <!--Modal Success -->

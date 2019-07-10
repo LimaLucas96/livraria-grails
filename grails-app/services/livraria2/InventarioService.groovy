@@ -80,16 +80,6 @@ class InventarioService {
             return "ERROR"
         }
     }
-    def alugueis(String id){
-        Usuario usuario = Usuario.get(id)
-        def alu = Aluguel.createCriteria().list {
-            and {
-                eq 'usuario', usuario
-                isNull("dataEntrega")
-            }
-        }.size()
-        println(alu)
-    }
 
     def numLivrosAlugados(String id){
         Usuario usuario = Usuario.get(id)
@@ -111,5 +101,24 @@ class InventarioService {
         }
 
         return lista
+    }
+
+    def devolicao(String id){
+        Aluguel aluguel = Aluguel.get(id)
+        Livro livro = aluguel.livro
+        Date dataHoje = new Date().clearTime()
+        Date dataAluguel = aluguel.dataAluguel
+        //dataHoje += 2
+        livro.estoque.quantidadeDisponivel ++
+        aluguel.dataEntrega = dataHoje
+
+        if(dataHoje - dataAluguel > 7 ){
+            int diasBloqueados = dataHoje - dataAluguel
+            Usuario usuario = aluguel.usuario
+            usuario.bloqueioTemporario = true
+            usuario.dataDesbloqueio = (dataHoje + diasBloqueados)
+        }
+
+        return "OK"
     }
 }

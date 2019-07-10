@@ -13,6 +13,8 @@ class Usuario implements Serializable {
 
 	String nome
 	String email
+	boolean bloqueioTemporario = false
+	Date dataDesbloqueio
 
 	static hasMany = [aluguel: Aluguel]
 
@@ -55,6 +57,7 @@ class Usuario implements Serializable {
 		nome nullable: false, blank: false
 		email email: true, unique: true, blank: false
 		aluguel nullable: true
+		dataDesbloqueio nullable: true
 	}
 
 	static mapping = {

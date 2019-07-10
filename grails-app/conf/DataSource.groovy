@@ -19,7 +19,7 @@ environments {
     development {
         dataSource {
             dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
-            url = "jdbc:mysql://localhost:3307/livraria"
+            url = "jdbc:mysql://localhost:3306/livraria"
         }
     }
     test {

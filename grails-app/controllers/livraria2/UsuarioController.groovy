@@ -11,6 +11,11 @@ class UsuarioController {
         def retorno = [:]
         retorno["nome"] = usuarioService.nome()?.nome
         retorno["livros"] = inventarioService.alugueisUsuario(usuarioService.id())
+
+        if(usuarioService.statusBloqueio()){
+            usuarioService.verificarBloqueio()
+        }
+
         render(view: 'index', model: ["profile" : retorno])
     }
 

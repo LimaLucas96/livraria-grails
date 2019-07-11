@@ -49,8 +49,16 @@
                 <li><a href="${g.createLink(controller: 'usuario',action: 'index')}"><i class="fa fa-home"></i> Principal</a></li>
                 <li class="active">Aluguel de Livros</li>
             </ol>
+
         </section>
         <section class="content">
+            <g:if test="${profile.status == "bloqueado"}">
+                <div class="alert alert-danger alert-dismissible">
+                    %{--<button type="button" class="close" data-dismiss="alert">&times;</button>--}%
+                    <h4><i class="icon fa fa-ban"></i> Alerta!</h4>
+                    <h5>Você so pode pegar livros apartir do dia ${profile.dataDesbloqueio}</h5>
+                </div>
+            </g:if>
             <div class="row">
                 <div class="col-xs-12">
                     <div class="box box-success">

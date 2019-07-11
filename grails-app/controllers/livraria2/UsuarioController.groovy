@@ -16,6 +16,7 @@ class UsuarioController {
 
         if(usuarioService.statusBloqueio()){
             retorno["status"] = "bloqueado"
+            retorno["dataDesbloqueio"] = usuarioService.dataDesbloqueio().getDateString()
         }else {
             retorno["status"] = "ativo"
         }
@@ -32,6 +33,7 @@ class UsuarioController {
 
         if(usuarioService.statusBloqueio()){
             retorno["status"] = "bloqueado"
+            retorno["dataDesbloqueio"] = usuarioService.dataDesbloqueio().getDateString()
     }else {
             retorno["status"] = "ativo"
         }

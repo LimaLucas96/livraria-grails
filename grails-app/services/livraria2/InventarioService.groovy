@@ -60,7 +60,7 @@ class InventarioService {
         Usuario usuario = Usuario.get(idUsuario)
 
         if( usuario.bloqueioTemporario){
-            return "ERROR_USER_BLOC"
+            return "ERROR"
         } else if(numLivrosAlugados(idUsuario) >= NUM_MAX_ALUGUEL){
             return "ERROR_NUM_MAX"
         }

@@ -45,6 +45,7 @@ class UsuarioController {
         def retorno = [:]
         //inventarioService.alugueis(usuarioService.id())
         retorno["mensagem"] = inventarioService.alugarLivro(params.id, usuarioService.id())
+
         render retorno as JSON
     }
     def devolverLivro(){

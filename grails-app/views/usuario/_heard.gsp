@@ -13,6 +13,20 @@
         <!-- Navbar Right Menu -->
         <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
+                <li class="dropdown notifications-menu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-bell-o"></i>
+                        %{--<span class="label label-danger">&blacksquare;</span>--}%
+                    </a>
+                    <div class="dropdown-menu text-muted text-wrap list-group" style="max-width: 400px;">
+                        <a href="#" class="list-group-item dropdown-item">
+                            <div class="dropdown-item">
+                                <h5 class="text-center">sem Avisos</h5>
+%{--                                <h4>Atenção!</h4>
+                                <small>O livro "fefefefefweadsfsef" está a 3 dias de se vencer.</small>--}%
+                            </div>
+                        </a>
+                </li>
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <img src="/Livraria2/assets/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">

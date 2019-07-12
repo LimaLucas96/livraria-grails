@@ -27,6 +27,7 @@
                 data:{"id" : id},
                 success: function (data) {
                     if(data.mensagem == "OK"){
+                        $('#divMenSuccess').html("<h5>Você alugou o "+ data.nomeLivro +" livro com sucesso! Você tem ate o dia " + data.diaEntrega + " para devolver o livro.</h5>");
                         $('#modalSuccess').modal('show');
                     }else if(data.mensagem == "ERROR"){
                         $('#modalError').modal('show');
@@ -96,8 +97,10 @@
                         <div class="modal-header">
                             <h4 class="modal-title">Sucesso!</h4>
                         </div>
-                        <div class="modal-body">
-                            <h5>Você alugou o livro com sucesso!</h5>
+                        <div class="modal-body" id="divMenSuccess">
+                            <h5>Você alugou o livro com sucesso! Você tem ate o dia ${profile.diaEntrega} para devolver o livro.</h5>
+                        </div>
+                        <div class="modal-footer">
                             <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
                         </div>
                     </div>

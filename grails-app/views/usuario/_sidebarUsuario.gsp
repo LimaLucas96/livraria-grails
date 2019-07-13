@@ -7,12 +7,12 @@
         </div>
         <ul class="sidebar-menu" data-widget="tree">
             <li>
-                <a href="${g.createLink(controller: 'usuario',action: 'alugarLivro')}">
+                <a href="${g.createLink(controller: 'livro',action: 'alugar')}">
                     <i class="fa fa-files-o"></i><span>Alugar Livro</span>
                 </a>
             </li>
             <li>
-                <a href="${g.createLink(controller: 'usuario', action: 'devolverLivro')}">
+                <a href="${g.createLink(controller: 'livro', action: 'devolver')}">
                     <i class="glyphicon glyphicon-download-alt"></i><span>Devolver Livro</span>
                 </a>
             </li>

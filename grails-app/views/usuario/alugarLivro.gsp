@@ -27,7 +27,7 @@
                 data:{"id" : id},
                 success: function (data) {
                     if(data.mensagem == "OK"){
-                        $('#divMenSuccess').html("<h5>Você alugou o "+ data.nomeLivro +" livro com sucesso! Você tem ate o dia " + data.diaEntrega + " para devolver o livro.</h5>");
+                        $('#divMenSuccess').html("<h5>Você alugou o "+ data.nome +" livro com sucesso! Você tem ate o dia " + data.dataEntrega + " para devolver o livro.</h5>");
                         $('#modalSuccess').modal('show');
                     }else if(data.mensagem == "ERROR"){
                         $('#modalError').modal('show');

@@ -60,9 +60,9 @@ class InventarioService {
         Usuario usuario = Usuario.get(idUsuario)
 
         if( usuario.bloqueioTemporario){
-            return "ERROR"
+            return ["mensagem":"ERROR"]
         } else if(numLivrosAlugados(idUsuario) >= NUM_MAX_ALUGUEL){
-            return "ERROR_NUM_MAX"
+            return ["mensagem":"ERROR_NUM_MAX"]
         }
 
         Livro livro = Livro.get(idLivro)
@@ -70,6 +70,7 @@ class InventarioService {
         Date data = new Date().clearTime()
         //println("data atual - > "+data.getDateString())
         aluguel.dataAluguel = data
+        aluguel.dataEntrega = data + 7
         aluguel.livro = livro
         aluguel.usuario = usuario
 
@@ -77,9 +78,9 @@ class InventarioService {
         if(!aluguel.hasErrors()){
             aluguel.save(flush: true)
             livro.estoque.quantidadeDisponivel --
-            return "OK"
+            ["mensagem":"OK","nome":livro.nome,"dataEntrega":(data + 7).getDateString()]
         }else{
-            return "ERROR"
+            ["mensagem":"ERROR"]
         }
     }
 
@@ -88,7 +89,7 @@ class InventarioService {
         def numA = Aluguel.createCriteria().list {
             and {
                 eq 'usuario', usuario
-                isNull("dataEntrega")
+                eq 'entreque',false
             }
         }.size()
         return numA
@@ -98,7 +99,8 @@ class InventarioService {
         def lista = Aluguel.createCriteria().list {
             and{
                 eq 'usuario', usuario
-                isNull 'dataEntrega'
+                eq 'entreque', false
+                //isNull 'dataEntrega'
             }
         }
 
@@ -112,15 +114,16 @@ class InventarioService {
         Date dataAluguel = aluguel.dataAluguel
         dataHoje += 10 //<-------------------------------------temporario!!!!!!
         livro.estoque.quantidadeDisponivel ++
-        aluguel.dataEntrega = dataHoje
+        //aluguel.dataEntrega = dataHoje
+        aluguel.entreque = true
 
-        if(dataHoje - dataAluguel > 7 ){
+/*        if(dataHoje - dataAluguel > 7 ){
             int diasBloqueados = dataHoje - dataAluguel
             Usuario usuario = aluguel.usuario
 
             usuario.bloqueioTemporario = true
             usuario.dataDesbloqueio = (dataHoje + (2*diasBloqueados))
-        }
+        }*/
 
         return "OK"
     }

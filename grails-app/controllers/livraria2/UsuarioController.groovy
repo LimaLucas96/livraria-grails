@@ -15,6 +15,7 @@ class UsuarioController {
         usuarioService.verificarBloqueio()
 
         if(usuarioService.statusBloqueio()){
+            usuarioService.verificarDesbloqueio()
             retorno["status"] = "bloqueado"
             retorno["dataDesbloqueio"] = usuarioService.dataDesbloqueio().getDateString()
         }else {
@@ -42,9 +43,8 @@ class UsuarioController {
     }
 
     def adicionarAluguel(){
-        def retorno = [:]
         //inventarioService.alugueis(usuarioService.id())
-        retorno["mensagem"] = inventarioService.alugarLivro(params.id, usuarioService.id())
+        def retorno = inventarioService.alugarLivro(params.id, usuarioService.id())
 
         render retorno as JSON
     }

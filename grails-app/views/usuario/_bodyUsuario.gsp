@@ -27,6 +27,7 @@
                             <th>Titulo</th>
                             <th>Autor(es)</th>
                             <th>Data de retirada</th>
+                            <th>Data de entrega</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -35,7 +36,9 @@
                                 <tr>
                                     <td>${aluguel.livro.nome}</td>
                                     <td>${aluguel.livro.autor.nome}</td>
-                                    <td>${aluguel.dataAluguel}</td>
+                                    <td><g:formatDate date="${aluguel.dataAluguel}" type="date"/></td>
+                                    <td><g:formatDate date="${aluguel.dataEntrega}" type="date"/> </td>
+                                   %{-- <td>${aluguel.dataEntrega.date}</td>--}%
                                 </tr>
                             </g:each>
                         </tbody>

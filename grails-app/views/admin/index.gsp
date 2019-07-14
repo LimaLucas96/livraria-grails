@@ -13,6 +13,7 @@
 
     <sec:ifAllGranted roles="ROLE_ADMIN">
         <asset:javascript src="flotChart.js"/>
+
         <script type="text/javascript">
             $(document).ready(function () {
                 $('#listaLivros').dataTable({

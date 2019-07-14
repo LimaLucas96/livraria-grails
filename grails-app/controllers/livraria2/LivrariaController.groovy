@@ -7,6 +7,7 @@ class LivrariaController {
     def springSecurityService
 
     def index() {
+
         String autenticacao = springSecurityService.authentication.authorities
         println(autenticacao == "[ROLE_ADMIN]")
         if(autenticacao == "[ROLE_ADMIN]"){

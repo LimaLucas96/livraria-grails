@@ -3,12 +3,12 @@ package livraria2
 class UsuarioController {
 
     def usuarioService
-    def inventarioService
+    def aluguelService
 
     def index() {
         def retorno = [:]
         retorno["nome"] = usuarioService.nome()?.nome
-        retorno["livros"] = inventarioService.alugueisUsuario(usuarioService.id())
+        retorno["livros"] = aluguelService.alugueisUsuario(usuarioService.id())
 
         usuarioService.verificarBloqueio()
 

@@ -6,6 +6,7 @@ class LivroController {
 
     def usuarioService
     def inventarioService
+    def aluguelService
 
     def alugar() {
         def retorno = [:]
@@ -25,7 +26,7 @@ class LivroController {
     }
 
     def adicionarAluguel(){
-        def retorno = inventarioService.alugarLivro(params.id, usuarioService.id())
+        def retorno = aluguelService.alugarLivro(params.id, usuarioService.id())
 
         render retorno as JSON
     }
@@ -33,20 +34,20 @@ class LivroController {
     def devolver(){
         def retorno = [:]
         retorno["nome"] = usuarioService.nome()?.nome
-        retorno["alugueis"] = inventarioService.alugueisUsuario(usuarioService.id())
+        retorno["alugueis"] = aluguelService.alugueisUsuario(usuarioService.id())
         render(view: "devolver", model: ["profile": retorno])
     }
 
     def devolucaoLivro(){
         def retorno = [:]
 
-        retorno["mensagem"] = inventarioService.devolucao(params.id)
+        retorno["mensagem"] = aluguelService.devolucao(params.id)
 
         render retorno as JSON
     }
     def carregarListaDevolucao(){
         def retorno = [:]
-        retorno["alugueis"] = inventarioService.alugueisUsuario(usuarioService.id())
+        retorno["alugueis"] = aluguelService.alugueisUsuario(usuarioService.id())
         render(template: "listaDevolucao", model: ["profile":retorno])
     }
 }

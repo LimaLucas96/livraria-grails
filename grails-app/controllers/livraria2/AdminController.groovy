@@ -1,5 +1,8 @@
 package livraria2
 
+import grails.converters.JSON
+import org.codehaus.groovy.grails.web.json.JSONArray
+
 class AdminController {
 
     def usuarioService
@@ -14,5 +17,12 @@ class AdminController {
         // println(teste)
         //criar para estoque
         render(view: "index", model: ["profile": retorno])
+    }
+
+    def criarTabelaAno(){
+        def retorno = [:]
+        retorno['tabelaAno'] = inventarioService.totalAno()
+
+        render retorno as JSON
     }
 }

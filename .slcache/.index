@@ -5330,3 +5330,5 @@ n:3432:org/codehaus/groovy/grails/plugins/DomainClassGrailsPlugin$_closure3$_clo
 n:13432:org/codehaus/groovy/grails/web/json/JSONArray
 y:18308:org/codehaus/groovy/grails/web/json/JSONObject
 n:6333:org/codehaus/groovy/grails/web/json/JSONTokener
+n:1323:org/fusesource/jansi/internal/CLibrary
+n:5484:jline/internal/TerminalLineSettings

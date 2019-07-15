@@ -22,4 +22,11 @@ class UsuarioController {
 
         render(view: 'index', model: ["profile" : retorno])
     }
+
+    def alterarPerfil(){
+        def retorno = [:]
+
+        retorno["nome"] = usuarioService.nome()?.nome
+        render(view: "alterarPerfil",model: ["profile" : retorno])
+    }
 }

@@ -26,6 +26,7 @@
                                 <small>O livro "fefefefefweadsfsef" está a 3 dias de se vencer.</small>--}%
                             </div>
                         </a>
+                    </div>
                 </li>
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -43,7 +44,7 @@
                         <!-- Menu Footer-->
                         <li class="user-footer">
                             <div class="pull-left">
-                                <a href="#" class="btn btn-default btn-flat">Perfil</a>
+                                <a href="${g.createLink(controller: 'usuario',action: 'alterarPerfil')}" class="btn btn-default btn-flat">Perfil</a>
                             </div>
                             <div class="pull-right">
                                 <a href="${request.contextPath}/j_spring_security_logout" class="btn btn-default btn-flat">Sair</a>

@@ -40,7 +40,9 @@ class UsuarioService {
 
         def dataEntregaMax = Aluguel.createCriteria().get {
             projections{
-                max 'dataEntrega'
+                if('dataEntrega' != null) {
+                    max 'dataEntrega'
+                }
             }
             and{
                 eq 'usuario',usuario

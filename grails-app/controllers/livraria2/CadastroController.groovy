@@ -14,6 +14,12 @@ class CadastroController {
         render(view: "cadastroLivro", model: ["profile" : retorno])
     }
 
+    def cadastroAdmin(){
+        def retorno = [:]
+        retorno["nome"] = usuarioService.nome()?.nome
+        render(view: "cadastroAdmin", model: ["profile":retorno])
+    }
+
     def salvarLivro(){
         def result = inventarioService.salvarLivro(params.nome,params.nomeAutor,
                 params.numeroPaginas,params.quantidadeLivros)
@@ -26,8 +32,14 @@ class CadastroController {
     }
 
     def salvarUsuario(){
-        def result = cadastroService.criarUsuario(params.nome,params.email,params.username,params.password, params.checkbox)
+        def resposta = cadastroService.criarUsuario(params.nome,params.email,params.username,params.password, params.checkbox)
 
-        render result as JSON
+        render resposta as JSON
+    }
+
+    def salvarAdmin(){
+        def resposta = cadastroService.criarAdmin(params.nome,params.email,params.username,params.password)
+
+        render resposta as JSON
     }
 }

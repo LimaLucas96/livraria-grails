@@ -26,7 +26,7 @@
 </div>
 
 <script>
-    $(document).ready(function () {
+    $(function () {
         $('#listaLivro').dataTable({
             'pading':true,
             'lengthChange':false

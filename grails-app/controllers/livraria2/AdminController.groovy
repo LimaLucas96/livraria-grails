@@ -14,6 +14,9 @@ class AdminController {
         //def teste = inventarioService.inventarioLivros()
         retorno["nome"] = nome
         retorno["livros"] = inventarioService.inventarioLivros()
+        retorno["livrosAl"] = inventarioService.quantLivrosAlugados()
+        retorno["livrosTotal"] = inventarioService.quantLivrosTotal()
+        retorno["quantUsuarios"] = usuarioService.quantUsuariosCadastrados()
         // println(teste)
         //criar para estoque
         render(view: "index", model: ["profile": retorno])

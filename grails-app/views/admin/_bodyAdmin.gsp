@@ -11,8 +11,8 @@
             <div class="info-box">
                 <span class="info-box-icon bg-red"><i class="fa fa-book"></i> </span>
                 <div class="info-box-content">
-                    <span class="info-box-text">Livros Aluguados</span>
-                    <span class="info-box-number">5,000</span>
+                    <span class="info-box-text">Total de Livros</span>
+                    <span class="info-box-number">${profile.livrosTotal}</span>
                 </div>
             </div>
         </div>
@@ -20,8 +20,8 @@
             <div class="info-box">
                 <span class="info-box-icon bg-aqua"><i class="ion ion-ios-book"></i> </span>
                 <div class="info-box-content">
-                    <span class="info-box-text">Livros Disponiveis</span>
-                    <span class="info-box-number">300</span>
+                    <span class="info-box-text">Livros Alugados</span>
+                    <span class="info-box-number">${profile.livrosAl}</span>
                 </div>
             </div>
         </div>
@@ -30,7 +30,7 @@
                 <span class="info-box-icon bg-green"><i class="fa fa-users"></i> </span>
                 <div class="info-box-content">
                     <span class="info-box-text">numero de usuarios</span>
-                    <span class="info-box-number">33</span>
+                    <span class="info-box-number">${profile.quantUsuarios}</span>
                 </div>
             </div>
         </div>

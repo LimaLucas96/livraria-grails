@@ -12,7 +12,7 @@
                 </a>
                 <ul class="treeview-menu">
                     <li><a href="${createLink(controller: 'cadastro', action: 'cadastroLivro')}"><i class="fa fa-circle-o"></i>Livro</a> </li>
-                    <li><a href="#"><i class="fa fa-circle-o"></i>Administrador</a> </li>
+                    <li><a href="${createLink(controller: 'cadastro',action: 'cadastroAdmin')}"><i class="fa fa-circle-o"></i>Administrador</a> </li>
                 </ul>
             </li>
         </ul>

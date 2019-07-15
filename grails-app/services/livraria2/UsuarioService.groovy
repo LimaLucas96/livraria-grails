@@ -55,4 +55,9 @@ class UsuarioService {
 
     }
 
+    def quantUsuariosCadastrados(){
+        int contador = UsuarioPermissao.findAllByPermissao(Permissao.findByAuthority("ROLE_CLIENTE")).size()
+
+        return contador
+    }
 }

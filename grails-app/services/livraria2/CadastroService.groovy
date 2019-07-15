@@ -29,4 +29,28 @@ class CadastroService {
             ["mensagem" : "ERROR", "usuario" : usuario.getErrors(), "checkBox" : "null"]
         }
     }
+
+    def criarAdmin(String nome, String email, String username, String password){
+        Usuario usuario = new Usuario()
+        Permissao permissao = Permissao.findByAuthority("ROLE_ADMIN")
+
+        usuario.nome = nome
+        usuario.email = email
+        usuario.username = username
+        usuario.password = password
+        usuario.enabled = true
+        usuario.accountExpired = false
+        usuario.accountLocked = false
+        usuario.passwordExpired = false
+        usuario.dataDesbloqueio = new Date().clearTime()
+
+        usuario.validate()
+        if(!usuario.hasErrors() && permissao != null){
+            usuario.save(flush: true)
+            UsuarioPermissao.create(usuario,permissao,true)
+            ["mensagem": "OK"]
+        }else{
+            ["mensagem":"ERROR", "usuario": usuario.getErrors()]
+        }
+    }
 }

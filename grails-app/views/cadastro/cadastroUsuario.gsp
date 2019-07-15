@@ -110,7 +110,7 @@
     <asset:javascript src="login.js"/>
 <script>
     function retornoFormulario(data) {
-        console.log(data);
+
         if(data.mensagem == "ERROR"){
             clearErrors();
             for (i in data.usuario.errors){

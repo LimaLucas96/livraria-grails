@@ -13,12 +13,17 @@
 
     <script type="text/javascript">
         $(document).ready(function () {
-            console.log("abre");
-            $('#listaLivro').dataTable({
-                'pading':true,
-                'lengthChange':false
-            });
+            carregarLista()
         });
+        function carregarLista() {
+            $.ajax({
+                method:'POST',
+                url:'carregarListaAlugar',
+                success:function (data) {
+                    $('#divLista').html(data)
+                }
+            })
+        }
         function adicionarLivro(id) {
 
             $.ajax({
@@ -28,6 +33,7 @@
                 success: function (data) {
                     if(data.mensagem == "OK"){
                         $('#divMenSuccess').html("<h5>Você alugou o "+ data.nome +" livro com sucesso! Você tem ate o dia " + data.dataEntrega + " para devolver o livro.</h5>");
+                        carregarLista();
                         $('#modalSuccess').modal('show');
                     }else if(data.mensagem == "ERROR"){
                         $('#modalError').modal('show');
@@ -61,33 +67,7 @@
                 </div>
             </g:if>
             <div class="row">
-                <div class="col-xs-12">
-                    <div class="box box-success">
-                        <div class="box-header">
-                            <i class="fa fa-book"></i>
-                            <h3 class="box-title">Acervo disponivel</h3>
-                        </div>
-                        <div class="box-body">
-                            <table id="listaLivro" class="table table-bordered table-hover">
-                                <thead>
-                                <tr>
-                                    <th>Titulo</th>
-                                    <th>Autor(es)</th>
-                                    <th>Opções</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <g:each in="${profile.livros}" var="livro">
-                                    <tr>
-                                        <td>${livro.livro.nome}</td>
-                                        <td>${livro.livro.autor.nome}</td>
-                                        <td><a href="javascript: adicionarLivro(${livro.livro.id})">Alugar</a></td>
-                                    </tr>
-                                </g:each>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                <div class="col-xs-12" id="divLista">
                 </div>
             </div>
             <!-- Modal Success -->

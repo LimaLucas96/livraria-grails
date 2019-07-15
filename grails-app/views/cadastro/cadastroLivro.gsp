@@ -66,7 +66,7 @@
                             </div>
                             <div class="form-group col-sm-6">
                                 <label>Quantidade de livros</label>
-                                <input type="number" name="quantidadeLivros" class="form-control" placeholder="Quantidade de paginas"/>
+                                <input type="number" name="quantidadeLivros" class="form-control" placeholder="Quantidade de livros"/>
                             </div>
                         </div>
                     </div>

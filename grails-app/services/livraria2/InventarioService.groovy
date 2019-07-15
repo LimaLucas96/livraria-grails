@@ -50,6 +50,25 @@ class InventarioService {
         return livros
     }
 
+    def quantLivrosTotal(){
+        int contador = Estoque.createCriteria().get{
+            projections{
+                sum 'quantidadeTotal'
+            }
+        }
+        return contador
+    }
+
+    def quantLivrosAlugados(){
+        int contador = Estoque.createCriteria().get{
+            projections{
+                sum 'quantidadeDisponivel'
+            }
+        }
+
+        return (quantLivrosTotal() - contador)
+    }
+
     def livrosDisponiveis(){
         def livros = Estoque.findAllByQuantidadeDisponivelGreaterThanEquals(1)
         return livros
@@ -66,4 +85,5 @@ class InventarioService {
         }
         return tabelaMeses
     }
+
 }

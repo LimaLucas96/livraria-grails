@@ -17,45 +17,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
-    <script type="text/javascript">
-        function registro(data) {
-            alert("Usuario Criado com sucesso")
-        }
-        function validateText(id) {
-            var div = $("input[name="+id+"]").closest("div");
-            if($("input[name="+id+"]").val() == null || $("input[name="+id+"]").val()==""){
-                div.addClass("has-error");
-            }else{
-                div.removeClass("has-error");
-            }
-        }
-        function validatePassword() {
-            var div = $("input[name=password]").closest("div");
-            var div2 = $("input[name=repeatPassword]").closest("div");
-            if($("input[name=repeatPassword]").val() != $("input[name=password]").val()){
-                div.addClass("has-error");
-                div2.addClass("has-error");
-
-            }else {
-                div.removeClass("has-error");
-                div2.removeClass("has-error");
-            }
-        }
-        $(document).ready(
-            function () {
-                $("#buttonRegister").click(
-                    function () {
-                        validatePassword();
-                        validateText("nome");
-                        validateText("email");
-                        validateText("username");
-                        validateText("password");
-                        validateText("repeatPassword");
-                    }
-                )
-            }
-        )
-    </script>
 </head>
 <body class="hold-transition register-page">
 <div class="register-box">
@@ -66,7 +27,12 @@
     <div class="register-box-body">
         <p class="login-box-msg">Registre-se</p>
 
-        <g:formRemote name="frmRegister" url="[controller:'cadastro', action:'salvarUsuario']" onSuccess="retornoFormulario(data)">
+        <g:formRemote name="frmRegister" url="[controller:'cadastro', action:'salvarUsuario']" enctype="multipart/form-data" onSuccess="retornoFormulario(data)">
+            <div class="form-group text-center">
+                <img id="imagem" for="fotoPerfil" src="${assetPath(src: 'noimg.png')}" class="profile-user-img img-responsive img-circle">
+                <label class="btn" for="fotoPerfil">Alterar foto</label>
+                <input id="fotoPerfil" type="file" accept="image/*" onchange="openFile(event)" name="fotoPerfil" class="hidden">
+            </div>
             <div class="form-group has-feedback">
                 <input type="text" class="form-control" placeholder="Nome completo" name="nome" >
                 <span class="glyphicon glyphicon-user form-control-feedback"></span>
@@ -109,6 +75,16 @@
 <!-- /.register-box -->
     <asset:javascript src="login.js"/>
 <script>
+    var openFile = function (file) {
+        var input = file.target;
+        var reader = new FileReader();
+        reader.onload = function () {
+            var dataUrl = reader.result;
+            var imagem = document.getElementById('imagem');
+            imagem.src = dataUrl;
+        };
+        reader.readAsDataURL(input.files[0]);
+    };
     function retornoFormulario(data) {
 
         if(data.mensagem == "ERROR"){

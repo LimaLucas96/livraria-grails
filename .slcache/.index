@@ -5332,3 +5332,10 @@ y:18308:org/codehaus/groovy/grails/web/json/JSONObject
 n:6333:org/codehaus/groovy/grails/web/json/JSONTokener
 n:1323:org/fusesource/jansi/internal/CLibrary
 n:5484:jline/internal/TerminalLineSettings
+n:510:org/springframework/web/multipart/MultipartFile
+n:503:org/springframework/web/multipart/MultipartHttpServletRequest
+n:912:org/springframework/web/multipart/MultipartRequest
+n:19607:org/springframework/http/HttpHeaders
+n:4643:org/springframework/web/multipart/commons/CommonsMultipartFile
+n:852:org/apache/commons/fileupload/FileItem
+n:302:org/apache/commons/fileupload/FileItemHeadersSupport

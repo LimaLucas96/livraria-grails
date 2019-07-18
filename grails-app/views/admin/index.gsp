@@ -20,6 +20,11 @@
                     'pading':true,
                     'lengthChange':false
                 });
+                $('#listaUsuariosBloc').dataTable({
+                    'pading':false,
+                    'lengthChange':false,
+                    'searching':false
+                })
             });
 
         </script>

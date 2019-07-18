@@ -13,11 +13,22 @@
 
     <script type="text/javascript">
         function verificarForm() {
-            if( 0 === 0){
+            var x = document.forms['frmAlterarCadastro']['nome'].value;
 
-                return true
+            if( x == ""){
+                formError();
+                return false
             }
+            return true
         }
+
+        function formError() {
+            var divFather = $('input[name=nome]').parents('.form-group');
+            var divMsg = divFather.find('.help-block');
+            divFather.addClass('has-error');
+            divMsg.removeClass('hidden');
+        }
+
         var openFile = function (file) {
             var input = file.target;
             var reader = new FileReader();
@@ -46,6 +57,23 @@
         </ol>
     </section>
     <section class="content">
+        <g:if test="${params.msg == "OK"}">
+            <div class="alert alert-success alert-dismissible">
+
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <h4><i class="icon fa fa-check"></i>Sucesso!</h4>
+                <h5>Seus dados foram alterados com sucesso.</h5>
+            </div>
+        </g:if>
+        <g:elseif test="${params.msg == 'ERROR'}">
+            <div class="alert alert-error alert-dismissible">
+
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <h4><i class="icon fa fa-ban"></i>Ops...!</h4>
+                <h5>Tivemos um problema ao alterar seu perfil. Verifique se os dados estão corretos.</h5>
+            </div>
+        </g:elseif>
+
         <g:form name="frmAlterarCadastro" url="[controller: 'cadastro',action: 'alterarDados']" class="form-horizontal needs-validation" enctype="multipart/form-data" onsubmit="return verificarForm()" >
             <div class="row">
                 <div class="col-md-5" style="float: none; margin: auto;">
@@ -65,6 +93,7 @@
                                 <label class="col-sm-2 control-label" for="nome">Nome</label>
                                 <div class="col-sm-10">
                                     <input type="text" class="form-control" id="nome" name="nome" value="${profile.dados.nome}" placeholder="Nome completo">
+                                    <div class="help-block hidden">Preencha seu nome completo.</div>
                                 </div>
                             </div>
                             <div class="form-group">

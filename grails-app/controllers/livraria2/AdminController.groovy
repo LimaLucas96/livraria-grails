@@ -15,6 +15,8 @@ class AdminController {
         retorno["nome"] = nome
         retorno["id"] = usuarioService.id()
         retorno["livros"] = inventarioService.inventarioLivros()
+        retorno["usuariosBloc"] = usuarioService.usuariosBloc()
+
         retorno["livrosAl"] = inventarioService.quantLivrosAlugados()
         retorno["livrosTotal"] = inventarioService.quantLivrosTotal()
         retorno["quantUsuarios"] = usuarioService.quantUsuariosCadastrados()

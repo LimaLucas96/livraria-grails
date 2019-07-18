@@ -62,6 +62,14 @@ class UsuarioService {
 
         return usuario
     }
+
+    def usuariosBloc(){
+        def lista = Usuario.createCriteria().list {
+            eq 'bloqueioTemporario', true
+        }
+        return lista
+    }
+
     def quantUsuariosCadastrados(){
         int contador = UsuarioPermissao.findAllByPermissao(Permissao.findByAuthority("ROLE_CLIENTE")).size()
 

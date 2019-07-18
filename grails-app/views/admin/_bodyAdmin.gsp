@@ -83,8 +83,34 @@
                 </div>
             </div>
         </div>
+        <!-- Fim da tabela dos livos -->
+        <!-- Inicio tabela inadimplentes -->
         <div class="col-md-4">
+            <div class="box box-danger">
+                <div class="box-header">
+                    <h3 class="box-title">Usuarios bloqueados</h3>
+                </div>
+                <div class="box-body">
+                    <table id="listaUsuariosBloc" class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Data Desbl.</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <g:each in="${profile.usuariosBloc}" var="usuario">
+                                <tr>
+                                    <td>${usuario.username}</td>
+                                    <td><g:formatDate date="${usuario.dataDesbloqueio}" type="date"/></td>
+                                </tr>
+                            </g:each>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
+        <!-- Fim tabela inadimplentes -->
     </div>
 
 </section>

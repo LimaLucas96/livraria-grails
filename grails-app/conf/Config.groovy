@@ -135,7 +135,7 @@ grails.plugin.springsecurity.securityConfigType = 'InterceptUrlMap'
 
 grails.plugin.springsecurity.interceptUrlMap = [
         [pattern: '/livraria/index',            access: ['ROLE_ADMIN','ROLE_CLIENTE']],
-        [pattern: '/cadastro/alterarPerfil',            access: ['ROLE_ADMIN','ROLE_CLIENTE']],
+        [pattern: '/cadastro/alterarPerfil',    access: ['ROLE_ADMIN','ROLE_CLIENTE']],
         [pattern: '/admin/**',                  access: ['ROLE_ADMIN']],
         [pattern: '/usuario/**',                access: ['ROLE_CLIENTE']],
         [pattern: '/cadastro/cadastroLivro',    access: ['ROLE_ADMIN']],

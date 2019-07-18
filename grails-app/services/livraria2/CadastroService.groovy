@@ -61,4 +61,24 @@ class CadastroService {
             ["mensagem":"ERROR", "usuario": usuario.getErrors()]
         }
     }
+
+    def alterarDados(String id,String nome, MultipartHttpServletRequest request){
+        Usuario usuario = Usuario.get(id)
+
+        CommonsMultipartFile foto = request.getFile('fotoPerfil')
+
+        if(!foto.isEmpty()){
+            usuario.fotoPerfil = foto.getBytes()
+        }
+        usuario.nome = nome
+
+        usuario.validate()
+        if(!usuario.hasErrors()){
+            usuario.save(flush: true)
+            [success: true]
+        }else{
+            println(usuario.getErrors())
+            [success: false]
+        }
+    }
 }

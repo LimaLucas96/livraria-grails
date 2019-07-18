@@ -1,10 +1,5 @@
 package livraria2
 
-import org.springframework.web.multipart.MultipartHttpServletRequest
-import org.springframework.web.multipart.commons.CommonsMultipartFile
-
-import javax.servlet.http.HttpServletRequest
-
 class UsuarioController {
 
     def usuarioService
@@ -14,6 +9,7 @@ class UsuarioController {
         def retorno = [:]
         retorno["nome"] = usuarioService.nome()?.nome
         retorno["livros"] = aluguelService.alugueisUsuario(usuarioService.id())
+        retorno["id"] = usuarioService.id()
 
         usuarioService.verificarBloqueio()
 
@@ -26,36 +22,6 @@ class UsuarioController {
         }
 
         render(view: 'index', model: ["profile" : retorno])
-    }
-
-    def alterarPerfil(){
-        def retorno = [:]
-
-        retorno["nome"] = usuarioService.nome()?.nome
-        retorno["dados"] = usuarioService.todosDadosUsuario()
-
-        render(view: "alterarPerfil",model: ["profile" : retorno])
-    }
-
-    def salvarTeste(){
-        Teste teste = new Teste()
-
-        MultipartHttpServletRequest mpr = (MultipartHttpServletRequest)request
-
-        CommonsMultipartFile uploadFile = (CommonsMultipartFile) mpr.getFile("upFoto")
-
-        teste.payload = uploadFile.getBytes()
-
-        teste.nome = params.nome
-        teste.type = uploadFile.contentType
-
-        teste.validate()
-        if(!teste.hasErrors()){
-            teste.save(flush: true)
-            println("SUCESSO!!!!!!!")
-        }else{
-            println "BUCETAAAAAAAAAAAAAAAAAAAA"
-        }
     }
 
     def showImagem(){

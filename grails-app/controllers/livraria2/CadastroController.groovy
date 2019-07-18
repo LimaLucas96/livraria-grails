@@ -11,12 +11,14 @@ class CadastroController {
     def cadastroLivro() {
         def retorno = [:]
         retorno["nome"] = usuarioService.nome()?.nome
+        retorno["id"] = usuarioService.id()
         render(view: "cadastroLivro", model: ["profile" : retorno])
     }
 
     def cadastroAdmin(){
         def retorno = [:]
         retorno["nome"] = usuarioService.nome()?.nome
+        retorno["id"] = usuarioService.id()
         render(view: "cadastroAdmin", model: ["profile":retorno])
     }
 
@@ -35,6 +37,25 @@ class CadastroController {
         def resposta = cadastroService.criarUsuario(params.nome,params.email,params.username,params.password, params.checkbox)
 
         render resposta as JSON
+    }
+
+    def alterarPerfil(){
+        def retorno = [:]
+
+        retorno["nome"] = usuarioService.nome()?.nome
+        retorno["dados"] = usuarioService.todosDadosUsuario()
+
+        render(view: "alterarPerfil",model: ["profile": retorno])
+    }
+
+    def alterarDados(){
+        def resposta = cadastroService.alterarDados(params.id, params.nome, request)
+
+        if(resposta.success){
+            redirect(action: 'alterarPerfil',params: [msg: "OK"])
+        }else{
+            redirect(action: 'alterarPerfil',params: [msg: "ERROR"])
+        }
     }
 
     def salvarAdmin(){

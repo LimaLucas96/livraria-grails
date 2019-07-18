@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd460e60-93d2-4421-a48a-5c99230f1a00" name="Default Changelist" comment="Up">
+    <list default="true" id="cd460e60-93d2-4421-a48a-5c99230f1a00" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.asscache" beforeDir="false" afterPath="$PROJECT_DIR$/.asscache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grails-app/controllers/livraria2/AdminController.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/controllers/livraria2/AdminController.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/controllers/livraria2/CadastroController.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/controllers/livraria2/CadastroController.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grails-app/controllers/livraria2/UsuarioController.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/controllers/livraria2/UsuarioController.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/domain/livraria2/Teste.groovy" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/grails-app/services/livraria2/CadastroService.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/services/livraria2/CadastroService.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grails-app/views/admin/_heard.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/admin/_heard.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grails-app/views/admin/_sidebarAdmin.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/admin/_sidebarAdmin.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grails-app/views/cadastro/cadastroUsuario.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/cadastro/cadastroUsuario.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grails-app/views/usuario/alterarPerfil.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/usuario/alterarPerfil.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BootStrap$_closure1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BootStrap$_closure1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BootStrap$_closure2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BootStrap$_closure2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/livraria2/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/livraria2/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/views/cadastro/_heard.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/cadastro/_heard.gsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/views/cadastro/_sidebarAdmin.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/cadastro/_sidebarAdmin.gsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/views/livro/_heard.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/livro/_heard.gsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/views/livro/_sidebarUsuario.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/livro/_sidebarUsuario.gsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/views/usuario/_heard.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/usuario/_heard.gsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/views/usuario/_sidebarUsuario.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/usuario/_sidebarUsuario.gsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/views/usuario/alterarPerfil.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/cadastro/alterarPerfil.gsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/livraria2/CadastroController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/livraria2/CadastroController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/livraria2/CadastroService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/livraria2/CadastroService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/livraria2/LivrariaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/livraria2/LivrariaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/livraria2/Usuario$__clinit__closure1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/livraria2/Usuario$__clinit__closure1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/livraria2/Usuario$__clinit__closure2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/livraria2/Usuario$__clinit__closure2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/livraria2/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/livraria2/Usuario.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/livraria2/UsuarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/livraria2/UsuarioController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/livraria2/UsuarioService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/livraria2/UsuarioService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/stacktrace.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/stacktrace.log" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -53,45 +51,14 @@
     <favorites_list name="Livraria2" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.2739872">
+    <splitter split-orientation="horizontal" split-proportion="0.4509804">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/grails-app/domain/livraria2/Usuario.groovy">
-              <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider" />
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
-                  <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/grails-app/views/cadastro/cadastroUsuario.gsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="504">
-                  <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/grails-app/controllers/livraria2/UsuarioController.groovy">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1392">
-                  <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
-                  <folding>
-                    <element signature="e#19#87#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/grails-app/views/admin/_sidebarAdmin.gsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+                <state>
+                  <caret column="17" selection-start-column="17" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
@@ -101,52 +68,21 @@
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/grails-app/controllers/livraria2/CadastroController.groovy">
+            <entry file="file://$PROJECT_DIR$/grails-app/views/cadastro/_heard.gsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="521">
-                  <caret line="38" selection-start-line="38" selection-end-line="38" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/grails-app/services/livraria2/CadastroService.groovy">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1224">
-                  <caret line="53" selection-start-line="53" selection-end-line="53" />
-                  <folding>
-                    <element signature="e#19#58#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/grails-app/views/usuario/_heard.gsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="624">
-                  <caret line="32" column="66" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/grails-app/views/cadastro/cadastroAdmin.gsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="759">
-                  <caret line="66" column="58" selection-start-line="66" selection-start-column="58" selection-end-line="66" selection-end-column="58" />
+                <state relative-caret-position="792">
+                  <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/grails-app/views/usuario/alterarPerfil.gsp">
+            <entry file="file://$PROJECT_DIR$/grails-app/views/cadastro/alterarPerfil.gsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="769">
-                  <caret line="68" column="87" selection-start-line="68" selection-start-column="87" selection-end-line="68" selection-end-column="87" />
+                <state relative-caret-position="313">
+                  <caret line="76" column="74" lean-forward="true" selection-start-line="76" selection-start-column="74" selection-end-line="76" selection-end-column="74" />
                   <folding>
-                    <element signature="n#style#0;n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -190,8 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/views/livraria/cadastroAdmin.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/livraria/_sidebarAdmin.gsp" />
         <option value="$PROJECT_DIR$/grails-app/domain/livraria2/Autor.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/livraria2/Estoque.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/livraria/cadastroLivro.gsp" />
@@ -200,7 +134,6 @@
         <option value="$PROJECT_DIR$/grails-app/views/livraria/_bodyAdmin.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/livraria/index.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/admin/cadastroLivro.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/cadastro/_heard.gsp" />
         <option value="$PROJECT_DIR$/grails-app/assets/javascripts/application2.js" />
         <option value="$PROJECT_DIR$/grails-app/views/usuario/_tabelaLivros.gsp" />
         <option value="$PROJECT_DIR$/grails-app/domain/livraria2/Livro.groovy" />
@@ -208,12 +141,10 @@
         <option value="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/usuario/_listaDevolucao.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/usuario/devolverLivro.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/usuario/_heard.gsp" />
         <option value="$PROJECT_DIR$/grails-app/domain/livraria2/Aluguel.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/usuario/_bodyUsuario.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/usuario/alugarLivro.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/livro/_sidebarUsuario.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/usuario/_sidebarUsuario.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/livro/_heard.gsp" />
         <option value="$PROJECT_DIR$/grails-app/services/livraria2/AluguelService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
@@ -227,20 +158,25 @@
         <option value="$PROJECT_DIR$/grails-app/views/livro/_listaAluguel.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/livro/alugar.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/livraria2/LivroController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/cadastro/_sidebarAdmin.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/cadastro/cadastroAdmin.gsp" />
         <option value="$PROJECT_DIR$/grails-app/domain/livraria2/Teste.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/livraria2/LivrariaController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/livraria2/Usuario.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/livraria2/UsuarioController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/cadastro/cadastroUsuario.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/livraria2/CadastroController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/services/livraria2/CadastroService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/livraria2/AdminController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/admin/_heard.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/admin/_sidebarAdmin.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/usuario/alterarPerfil.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/services/livraria2/CadastroService.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/cadastro/alterarPerfil.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/usuario/_heard.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/usuario/_sidebarUsuario.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/livraria2/CadastroController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/cadastro/_sidebarAdmin.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/cadastro/_sidebarUsuario.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/cadastro/_heard.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/livraria2/UsuarioController.groovy" />
       </list>
     </option>
   </component>
@@ -288,32 +224,6 @@
               <item name="Livraria2" type="b2602c69:ProjectViewProjectNode" />
               <item name="Livraria2" type="462c0819:PsiDirectoryNode" />
               <item name="grails-app" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Livraria2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Livraria2" type="462c0819:PsiDirectoryNode" />
-              <item name="grails-app" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="livraria2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Livraria2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Livraria2" type="462c0819:PsiDirectoryNode" />
-              <item name="grails-app" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Livraria2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Livraria2" type="462c0819:PsiDirectoryNode" />
-              <item name="grails-app" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="livraria2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Livraria2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Livraria2" type="462c0819:PsiDirectoryNode" />
-              <item name="grails-app" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -328,13 +238,6 @@
               <item name="Livraria2" type="462c0819:PsiDirectoryNode" />
               <item name="grails-app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Livraria2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Livraria2" type="462c0819:PsiDirectoryNode" />
-              <item name="grails-app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Livraria2" type="b2602c69:ProjectViewProjectNode" />
@@ -400,19 +303,19 @@
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\lucas lima\IdeaProjects\Livraria2\grails-app\views\livro" />
-      <recent name="C:\Users\lucas lima\IdeaProjects\Livraria2\grails-app\views\usuario" />
-      <recent name="C:\Users\lucas lima\IdeaProjects\Livraria2\grails-app\views\cadastro" />
-      <recent name="C:\Users\lucas lima\IdeaProjects\Livraria2\grails-app\views\admin" />
-      <recent name="C:\Users\lucas lima\IdeaProjects\Livraria2\grails-app\assets\admin" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lucas lima\IdeaProjects\Livraria2\grails-app\views\cadastro" />
       <recent name="C:\Users\lucas lima\IdeaProjects\Livraria2\grails-app\assets\images" />
       <recent name="C:\Users\lucas lima\IdeaProjects\Livraria2\grails-app\views\livro" />
       <recent name="C:\Users\lucas lima\IdeaProjects\Livraria2\grails-app\assets\admin" />
-      <recent name="C:\Users\lucas lima\IdeaProjects\Livraria2\grails-app\views\cadastro" />
       <recent name="C:\Users\lucas lima\IdeaProjects\Livraria2\grails-app\views\admin" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lucas lima\IdeaProjects\Livraria2\grails-app\views\livro" />
+      <recent name="C:\Users\lucas lima\IdeaProjects\Livraria2\grails-app\views\cadastro" />
+      <recent name="C:\Users\lucas lima\IdeaProjects\Livraria2\grails-app\views\usuario" />
+      <recent name="C:\Users\lucas lima\IdeaProjects\Livraria2\grails-app\views\admin" />
+      <recent name="C:\Users\lucas lima\IdeaProjects\Livraria2\grails-app\assets\admin" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -489,7 +392,7 @@
       <workItem from="1563312052000" duration="14050000" />
       <workItem from="1563369982192" duration="2786000" />
       <workItem from="1563373078929" duration="73000" />
-      <workItem from="1563382306394" duration="11347000" />
+      <workItem from="1563382306394" duration="15951000" />
     </task>
     <task id="LOCAL-00001" summary="Cadastro e Login criados">
       <created>1562076970142</created>
@@ -666,11 +569,18 @@
       <option name="project" value="LOCAL" />
       <updated>1563241904215</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Up">
+      <created>1563411923238</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1563411923239</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="372672000" />
+    <option name="totallyTimeSpent" value="377276000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -685,7 +595,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4967742" weight="0.15724947" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4967742" visible="true" weight="0.16577825" />
       <window_info id="Structure" order="1" sideWeight="0.5025729" side_tool="true" weight="0.17910448" />
       <window_info id="Web" order="2" sideWeight="0.5032258" side_tool="true" weight="0.13646056" />
       <window_info id="Persistence" order="3" side_tool="true" />
@@ -717,7 +627,7 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4967742" visible="true" weight="0.15724947" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4967742" visible="true" weight="0.15724947" />
       <window_info id="Structure" order="1" sideWeight="0.5025729" side_tool="true" weight="0.17910448" />
       <window_info id="Web" order="2" sideWeight="0.5032258" side_tool="true" weight="0.13646056" />
       <window_info id="Persistence" order="3" side_tool="true" />
@@ -808,14 +718,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/views/livraria/index.gsp" />
-    <entry file="file://$PROJECT_DIR$/grails-app/views/cadastro/_heard.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="36" column="29" lean-forward="true" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/usuario/_tabelaLivros.gsp" />
     <entry file="file://$PROJECT_DIR$/grails-app/assets/javascripts/application2.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -879,42 +781,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/usuario/_bodyUsuario.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/livraria2/Aluguel.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="8" column="66" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/livro/_sidebarUsuario.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/usuario/_sidebarUsuario.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/livro/_heard.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#nav#0;n#header#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -929,13 +800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-316">
           <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/admin/index.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -1039,20 +903,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/cadastro/_sidebarAdmin.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="91" selection-start-line="14" selection-start-column="91" selection-end-line="14" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/livraria2/InventarioService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/livraria2/LivrariaController.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="624">
@@ -1090,61 +940,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/admin/_heard.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="17" column="119" selection-start-line="17" selection-start-column="119" selection-end-line="17" selection-end-column="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/livraria2/AdminController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="639">
-          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding>
-            <element signature="e#19#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/admin/_sidebarAdmin.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/livraria2/CadastroService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="e#19#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/livraria2/CadastroController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/livraria2/UsuarioController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1392">
-          <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
-          <folding>
-            <element signature="e#19#87#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1156,34 +955,144 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/cadastro/cadastroAdmin.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/admin/index.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="66" column="58" selection-start-line="66" selection-start-column="58" selection-end-line="66" selection-end-column="58" />
+        <state relative-caret-position="187">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/usuario/_heard.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/services/livraria2/InventarioService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="32" column="66" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
+        <state relative-caret-position="-408">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/admin/_heard.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/usuario/_bodyUsuario.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="745">
+          <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/cadastro/cadastroUsuario.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        <state relative-caret-position="312">
+          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/usuario/alterarPerfil.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/usuario/_sidebarUsuario.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="769">
-          <caret line="68" column="87" selection-start-line="68" selection-start-column="87" selection-end-line="68" selection-end-column="87" />
+        <state relative-caret-position="96">
+          <caret line="4" column="98" selection-start-line="4" selection-start-column="98" selection-end-line="4" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/livraria2/CadastroService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1671">
+          <caret line="71" column="9" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#19#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/cadastro/cadastroAdmin.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1407">
+          <caret line="66" column="58" selection-start-line="66" selection-start-column="58" selection-end-line="66" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/livraria2/CadastroController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="44" column="53" selection-start-line="44" selection-start-column="53" selection-end-line="44" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/usuario/_heard.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="17" column="67" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/livraria2/AdminController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding>
+            <element signature="e#19#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/livro/_heard.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/admin/_sidebarAdmin.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/livraria2/UsuarioController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/cadastro/_sidebarAdmin.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="111" selection-start-line="4" selection-start-column="111" selection-end-line="4" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/cadastro/_sidebarUsuario.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="59" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/livro/_sidebarUsuario.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/cadastro/_heard.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/cadastro/alterarPerfil.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="76" column="74" lean-forward="true" selection-start-line="76" selection-start-column="74" selection-end-line="76" selection-end-column="74" />
+          <folding>
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

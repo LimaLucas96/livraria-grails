@@ -15,13 +15,13 @@
             <ul class="nav navbar-nav">
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <img src="/Livraria2/assets/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                        <img src="${createLink(controller: 'admin',action: 'showImagem', params: [id:"${profile.id}"])}" class="user-image" alt="User Image">
                         <span class="hidden-xs">${profile.nome}</span>
                     </a>
                     <ul class="dropdown-menu">
                         <!-- User image -->
                         <li class="user-header">
-                            <img src="/Livraria2/assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                            <img src="${createLink(controller: 'admin',action: 'showImagem', params: [id:"${profile.id}"])}" class="img-circle" alt="User Image">
                             <p>
                                 ${profile.nome}
                             </p>

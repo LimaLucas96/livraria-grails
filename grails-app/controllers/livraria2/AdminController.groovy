@@ -13,6 +13,7 @@ class AdminController {
         String nome = usuarioService.nome()?.nome
         //def teste = inventarioService.inventarioLivros()
         retorno["nome"] = nome
+        retorno["id"] = usuarioService.id()
         retorno["livros"] = inventarioService.inventarioLivros()
         retorno["livrosAl"] = inventarioService.quantLivrosAlugados()
         retorno["livrosTotal"] = inventarioService.quantLivrosTotal()
@@ -27,5 +28,10 @@ class AdminController {
         retorno['tabelaAno'] = inventarioService.totalAno()
 
         render retorno as JSON
+    }
+    def showImagem(){
+        Usuario usuario = Usuario.get(params.id)
+        response.outputStream << usuario.fotoPerfil
+        response.outputStream.flush()
     }
 }

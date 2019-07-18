@@ -17,7 +17,8 @@ class BootStrap {
 
         Usuario rootU = Usuario.findByUsername("root")
         if(rootU == null){
-            rootU = new Usuario(nome: "root",email: "root@root.com",username: "root", password: "root", enabled: true,accountExpired: false,accountLocked: false,passwordExpired: false ).save(flush: true)
+            File fotoPerfil = new File("./grails-app/assets/images/noimg.png")
+            rootU = new Usuario(nome: "root",email: "root@root.com",username: "root", password: "root", enabled: true,accountExpired: false,accountLocked: false,passwordExpired: false, fotoPerfil: fotoPerfil.getBytes() ).save(flush: true)
         }
 
         if(UsuarioPermissao.findByUsuarioAndPermissao(rootU,admin) == null){

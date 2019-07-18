@@ -11,6 +11,10 @@
     <meta name="layout" content="main2">
     <title>Alterar perfil</title>
     <script type="text/javascript">
+        $(function () {
+            $('[data-toggle = "tooltip"]').tooltip()
+        });
+
         var openFile = function (file) {
             var input = file.target;
             var reader = new FileReader();
@@ -34,36 +38,40 @@
         </ol>
     </section>
     <section class="content">
-        <g:form name="frmAlterarCadastro" url="[controller: 'usuario',action: 'salvarTeste']" class="form-horizontal" enctype="multipart/form-data">
+        <g:form name="frmAlterarCadastro" url="[controller: 'usuario',action: 'salvarTeste']" class="form-horizontal needs-validation" enctype="multipart/form-data" onsubmit="">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-5" style="float: none; margin: auto;">
                     <div class="box box-primary">
                         <div class="box-body box-profile">
-                            <img id="imagem" src="${createLink(controller: 'usuario',action: 'showImagem',params: [id:'1'])}" class="profile-user-img img-responsive img-circle" style="height: 200px; width: 200px;">
+                            <img id="imagem" src="${createLink(controller: 'usuario',action: 'showImagem',params: [id:'1'])}" class="profile-user-img img-responsive img-circle" style="width: 100px; height: 100px;">
                             %{--<img id="imagem" src="/Livraria2/assets/dist/img/user2-160x160.jpg" class="profile-user-img img-responsive img-circle" style="height: 200px; width: 200px;">--}%
-                        </div>
-                        <div class="box-footer">
-                            <label class="btn btn-primary btn-block" for="upFoto"> Alterar</label>
+                            <label class="btn btn-block text-primary" for="upFoto"> Alterar foto</label>
                             <input id="upFoto" type='file' accept="image/*" onchange="openFile(event)" name="upFoto" class="hidden">
-                            %{--<button type="file" class="btn btn-primary btn-block">Alterar Foto</button>--}%
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="box box-primary">
-                        <div class="box-body">
+
                             <div class="form-group">
-                                <label for="nome" class="col-sm-2 control-label">Nome</label>
+                                <label class="col-sm-2 control-label" for="nome">Nome</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome">
+                                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome completo">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-sm-offset-2 col-sm-10">
-                                    <g:submitButton name="botao" class="btn btn-danger" value="Enviar"/>
+                                <label class="col-sm-2 control-label" for="email">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="email" name="email" placeholder="Email" disabled>
                                 </div>
                             </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" for="username">Username</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="username" name="username" placeholder="Username" disabled>
+                                </div>
+                            </div>
+                            <div class="col-sm-offset-1 col-sm-10" style="margin-top: 30px;">
+                                <g:submitButton name="btnSubmit" class="btn btn-danger btn-block" value="Salvar"/>
+                                %{--<button type="file" class="btn btn-primary btn-block">Alterar Foto</button>--}%
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>

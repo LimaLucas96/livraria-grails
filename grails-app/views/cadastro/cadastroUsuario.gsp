@@ -27,12 +27,12 @@
     <div class="register-box-body">
         <p class="login-box-msg">Registre-se</p>
 
-        <g:formRemote name="frmRegister" url="[controller:'cadastro', action:'salvarUsuario']" enctype="multipart/form-data" onSuccess="retornoFormulario(data)">
-            <div class="form-group text-center">
+        <g:formRemote name="frmRegister" url="[controller:'cadastro', action:'salvarUsuario']" enctype="multipart/form-data" target="test" onSuccess="retornoFormulario(data)">
+  %{--          <div class="form-group text-center">
                 <img id="imagem" for="fotoPerfil" src="${assetPath(src: 'noimg.png')}" class="profile-user-img img-responsive img-circle">
                 <label class="btn" for="fotoPerfil">Alterar foto</label>
                 <input id="fotoPerfil" type="file" accept="image/*" onchange="openFile(event)" name="fotoPerfil" class="hidden">
-            </div>
+            </div>--}%
             <div class="form-group has-feedback">
                 <input type="text" class="form-control" placeholder="Nome completo" name="nome" >
                 <span class="glyphicon glyphicon-user form-control-feedback"></span>
@@ -67,14 +67,18 @@
                 <!-- /.col -->
             </div>
         </g:formRemote >
-
         <a href="login.html" class="text-center">Eu ja possuo uma conta</a>
     </div>
     <!-- /.form-box -->
 </div>
 <!-- /.register-box -->
     <asset:javascript src="login.js"/>
-<script>
+<script type="text/javascript">
+    function teste() {
+        console.error("buceta");
+        var data = $.parseJSON($('#test').contents().text());
+        retornoFormulario(data);
+    }
     var openFile = function (file) {
         var input = file.target;
         var reader = new FileReader();
@@ -86,7 +90,7 @@
         reader.readAsDataURL(input.files[0]);
     };
     function retornoFormulario(data) {
-
+        console.log(data);
         if(data.mensagem == "ERROR"){
             clearErrors();
             for (i in data.usuario.errors){

@@ -1,6 +1,8 @@
 package livraria2
 
 import grails.transaction.Transactional
+import org.springframework.web.multipart.MultipartHttpServletRequest
+import org.springframework.web.multipart.commons.CommonsMultipartFile
 
 @Transactional
 class CadastroService {
@@ -8,6 +10,8 @@ class CadastroService {
     def criarUsuario(String nome, String email, String username, String password, String  checkbox) {
         Usuario usuario = new Usuario()
         Permissao permissao = Permissao.findByAuthority("ROLE_CLIENTE")
+
+        File fotoPerfil = new File("./grails-app/assets/images/noimg.png")
 
         usuario.nome = nome
         usuario.email = email
@@ -18,6 +22,7 @@ class CadastroService {
         usuario.accountLocked = false
         usuario.passwordExpired = false
         usuario.dataDesbloqueio = new Date().clearTime()
+        usuario.fotoPerfil = fotoPerfil.getBytes()
 
         usuario.validate()
         if(!usuario.hasErrors() && permissao != null && checkbox != null){
@@ -34,6 +39,8 @@ class CadastroService {
         Usuario usuario = new Usuario()
         Permissao permissao = Permissao.findByAuthority("ROLE_ADMIN")
 
+        File fotoPerfil = new File("./grails-app/assets/images/noimg.png")
+
         usuario.nome = nome
         usuario.email = email
         usuario.username = username
@@ -43,6 +50,7 @@ class CadastroService {
         usuario.accountLocked = false
         usuario.passwordExpired = false
         usuario.dataDesbloqueio = new Date().clearTime()
+        usuario.fotoPerfil = fotoPerfil.getBytes()
 
         usuario.validate()
         if(!usuario.hasErrors() && permissao != null){

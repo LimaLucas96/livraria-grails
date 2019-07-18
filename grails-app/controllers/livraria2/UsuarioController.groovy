@@ -57,8 +57,8 @@ class UsuarioController {
     }
 
     def showImagem(){
-        Teste teste = Teste.get(params.id)
-        response.outputStream << teste.payload
+        Usuario usuario = Usuario.get(params.id)
+        response.outputStream << usuario.fotoPerfil
         response.outputStream.flush()
     }
 }

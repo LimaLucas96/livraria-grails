@@ -32,6 +32,8 @@ class UsuarioController {
         def retorno = [:]
 
         retorno["nome"] = usuarioService.nome()?.nome
+        retorno["dados"] = usuarioService.todosDadosUsuario()
+
         render(view: "alterarPerfil",model: ["profile" : retorno])
     }
 

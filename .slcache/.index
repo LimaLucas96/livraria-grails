@@ -5339,3 +5339,10 @@ n:19607:org/springframework/http/HttpHeaders
 n:4643:org/springframework/web/multipart/commons/CommonsMultipartFile
 n:852:org/apache/commons/fileupload/FileItem
 n:302:org/apache/commons/fileupload/FileItemHeadersSupport
+n:503:org/springframework/web/multipart/MultipartHttpServletRequest
+n:912:org/springframework/web/multipart/MultipartRequest
+n:4643:org/springframework/web/multipart/commons/CommonsMultipartFile
+n:510:org/springframework/web/multipart/MultipartFile
+n:19607:org/springframework/http/HttpHeaders
+n:852:org/apache/commons/fileupload/FileItem
+n:302:org/apache/commons/fileupload/FileItemHeadersSupport

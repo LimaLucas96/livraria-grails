@@ -29,7 +29,7 @@
                         <!-- Menu Footer-->
                         <li class="user-footer">
                             <div class="pull-left">
-                                <a href="#" class="btn btn-default btn-flat">Perfil</a>
+                                <a href="${g.createLink(controller: 'cadastro',action: 'alterarPerfil')}" class="btn btn-default btn-flat">Perfil</a>
                             </div>
                             <div class="pull-right">
                                 <a href="${request.contextPath}/j_spring_security_logout" class="btn btn-default btn-flat">Sair</a>

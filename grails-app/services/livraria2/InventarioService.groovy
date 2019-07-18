@@ -51,18 +51,21 @@ class InventarioService {
     }
 
     def quantLivrosTotal(){
-        int contador = Estoque.createCriteria().get{
+        def contador = Estoque.createCriteria().get{
             projections{
                 if('quantidadeTotal' != null) {
                     sum 'quantidadeTotal'
                 }
             }
         }
+        if( contador == null){
+            contador = 0
+        }
         return contador
     }
 
     def quantLivrosAlugados(){
-        int contador = Estoque.createCriteria().get{
+        def contador = Estoque.createCriteria().get{
             projections{
                 if('quantidadeDisponivel' != null) {
                     sum 'quantidadeDisponivel'
@@ -70,6 +73,9 @@ class InventarioService {
             }
         }
 
+        if( contador == null){
+            contador = 0
+        }
         return (quantLivrosTotal() - contador)
     }
 

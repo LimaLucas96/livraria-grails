@@ -41,7 +41,7 @@
     <section class="content-header">
         <h1>Alterar Perfil</h1>
         <ol class="breadcrumb">
-            <li><a href="${g.createLink(controller: 'usuario',action: 'index')}"><i class="fa fa-home"></i> Principal</a></li>
+            <li><a href="${g.createLink(controller: 'livraria',action: 'index')}"><i class="fa fa-home"></i> Principal</a></li>
             <li class="active">Alterar Perfil</li>
         </ol>
     </section>
@@ -51,7 +51,12 @@
                 <div class="col-md-5" style="float: none; margin: auto;">
                     <div class="box box-primary">
                         <div class="box-body box-profile">
-                            <img id="imagem" src="${createLink(controller: 'usuario',action: 'showImagem',params: [id:"${profile.dados.id}"])}" class="profile-user-img img-responsive img-circle" style="width: 100px; height: 100px;">
+                            <sec:ifAllGranted roles="ROLE_ADMIN">
+                                <img id="imagem" src="${createLink(controller: 'admin',action: 'showImagem',params: [id:"${profile.dados.id}"])}" class="profile-user-img img-responsive img-circle" style="width: 100px; height: 100px;">
+                            </sec:ifAllGranted>
+                            <sec:ifAllGranted roles="ROLE_CLIENTE">
+                                <img id="imagem" src="${createLink(controller: 'usuario',action: 'showImagem',params: [id:"${profile.dados.id}"])}" class="profile-user-img img-responsive img-circle" style="width: 100px; height: 100px;">
+                            </sec:ifAllGranted>
                             %{--<img id="imagem" src="/Livraria2/assets/dist/img/user2-160x160.jpg" class="profile-user-img img-responsive img-circle" style="height: 200px; width: 200px;">--}%
                             <label class="btn btn-block text-primary" for="fotoPerfil"> Alterar foto</label>
                             <input id="fotoPerfil" type='file' accept="image/*" onchange="openFile(event)" name="fotoPerfil" class="hidden">

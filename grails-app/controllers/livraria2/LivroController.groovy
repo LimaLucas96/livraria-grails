@@ -11,6 +11,7 @@ class LivroController {
     def alugar() {
         def retorno = [:]
         retorno["nome"] = usuarioService.nome()?.nome
+        retorno["id"] = usuarioService.id()
 
         usuarioService.verificarBloqueio()
 
@@ -33,6 +34,7 @@ class LivroController {
     def devolver(){
         def retorno = [:]
         retorno["nome"] = usuarioService.nome()?.nome
+        retorno["id"] = usuarioService.id()
         retorno["alugueis"] = aluguelService.alugueisUsuario(usuarioService.id())
         render(view: "devolver", model: ["profile": retorno])
     }

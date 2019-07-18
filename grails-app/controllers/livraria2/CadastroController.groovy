@@ -43,6 +43,7 @@ class CadastroController {
         def retorno = [:]
 
         retorno["nome"] = usuarioService.nome()?.nome
+        retorno["id"] = usuarioService.id()
         retorno["dados"] = usuarioService.todosDadosUsuario()
 
         render(view: "alterarPerfil",model: ["profile": retorno])

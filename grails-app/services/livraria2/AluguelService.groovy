@@ -19,7 +19,7 @@ class AluguelService {
         Livro livro = Livro.get(idLivro)
         Aluguel aluguel = new Aluguel()
         Date data = new Date().clearTime()
-        //println("data atual - > "+data.getDateString())
+
         aluguel.dataAluguel = data
         aluguel.dataEntrega = data + 7
         aluguel.livro = livro
@@ -52,7 +52,6 @@ class AluguelService {
             and{
                 eq 'usuario', usuario
                 eq 'entreque', false
-                //isNull 'dataEntrega'
             }
         }
 
@@ -62,20 +61,9 @@ class AluguelService {
     def devolucao(String id){
         Aluguel aluguel = Aluguel.get(id)
         Livro livro = aluguel.livro
-        Date dataHoje = new Date().clearTime()
-        Date dataAluguel = aluguel.dataAluguel
-        dataHoje += 10 //<-------------------------------------temporario!!!!!!
         livro.estoque.quantidadeDisponivel ++
-        //aluguel.dataEntrega = dataHoje
+
         aluguel.entreque = true
-
-/*        if(dataHoje - dataAluguel > 7 ){
-            int diasBloqueados = dataHoje - dataAluguel
-            Usuario usuario = aluguel.usuario
-
-            usuario.bloqueioTemporario = true
-            usuario.dataDesbloqueio = (dataHoje + (2*diasBloqueados))
-        }*/
 
         return "OK"
     }

@@ -29,7 +29,7 @@ class InventarioService {
             if(autor1 == null){
                 autor1 = new Autor()
             }
-           // autor1.livro = livro
+
             autor1.nome = autors[i]
             livro.addToAutor(autor1.save())
         }

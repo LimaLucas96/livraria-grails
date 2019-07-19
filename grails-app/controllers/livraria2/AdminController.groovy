@@ -11,7 +11,7 @@ class AdminController {
     def index() {
         def retorno = [:]
         String nome = usuarioService.nome()?.nome
-        //def teste = inventarioService.inventarioLivros()
+
         retorno["nome"] = nome
         retorno["id"] = usuarioService.id()
         retorno["livros"] = inventarioService.inventarioLivros()
@@ -20,8 +20,7 @@ class AdminController {
         retorno["livrosAl"] = inventarioService.quantLivrosAlugados()
         retorno["livrosTotal"] = inventarioService.quantLivrosTotal()
         retorno["quantUsuarios"] = usuarioService.quantUsuariosCadastrados()
-        // println(teste)
-        //criar para estoque
+
         render(view: "index", model: ["profile": retorno])
     }
 

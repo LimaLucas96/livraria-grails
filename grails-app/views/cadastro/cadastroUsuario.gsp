@@ -28,11 +28,6 @@
         <p class="login-box-msg">Registre-se</p>
 
         <g:formRemote name="frmRegister" url="[controller:'cadastro', action:'salvarUsuario']" enctype="multipart/form-data" onSuccess="retornoFormulario(data)">
-  %{--          <div class="form-group text-center">
-                <img id="imagem" for="fotoPerfil" src="${assetPath(src: 'noimg.png')}" class="profile-user-img img-responsive img-circle">
-                <label class="btn" for="fotoPerfil">Alterar foto</label>
-                <input id="fotoPerfil" type="file" accept="image/*" onchange="openFile(event)" name="fotoPerfil" class="hidden">
-            </div>--}%
             <div class="form-group has-feedback">
                 <input type="text" class="form-control" placeholder="Nome completo" name="nome" >
                 <span class="glyphicon glyphicon-user form-control-feedback"></span>

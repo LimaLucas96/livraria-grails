@@ -20,7 +20,6 @@
                 }
             }else if (data.mensagem == "OK"){
                 document.location.assign("${g.createLink(controller: 'cadastro',action: 'cadastroAdmin')}?msg=OK")
-                //show alert
             }
         }
 
